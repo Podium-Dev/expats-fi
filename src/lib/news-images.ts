@@ -4,6 +4,14 @@ type NewsImage = {
 }
 
 const newsImages: Record<string, NewsImage> = {
+  'finland-unemployment-september-2026': {
+    src: '/images/news/finland-unemployment-september-2026.webp',
+    alt: 'A laptop with job listings and a CV arranged on a quiet home-office desk',
+  },
+  'kela-benefit-index-changes-2027': {
+    src: '/images/news/kela-benefit-index-changes-2027.webp',
+    alt: 'Household paperwork, a calculator and euro coins arranged on a kitchen table',
+  },
   'kela-two-benefits-income-rules-2026': {
     src: '/images/news/kela-two-benefits-income-rules-2026.webp',
     alt: 'Two adults calmly reviewing benefit paperwork beside a laptop at home',
