@@ -17,6 +17,7 @@ import * as migration_20261011_090000_fix_hima_holistic_email from './20261011_0
 import * as migration_20261011_100000_remove_unverified_hima_email from './20261011_100000_remove_unverified_hima_email';
 import * as migration_20261017_203500_add_event_offer_fields from './20261017_203500_add_event_offer_fields';
 import * as migration_20261021_110000_publish_october_twenty_editorial from './20261021_110000_publish_october_twenty_editorial';
+import * as migration_20261104_073000_publish_november_four_editorial from './20261104_073000_publish_november_four_editorial';
 import * as migration_20260913_090000_publish_student_kela_news from './20260913_090000_publish_student_kela_news';
 import * as migration_20260907_100000_publish_september_news from './20260907_100000_publish_september_news';
 import * as migration_20260803_075626_initial from './20260803_075626_initial';
@@ -329,5 +330,10 @@ export const migrations = [
     up: migration_20261021_110000_publish_october_twenty_editorial.up,
     down: migration_20261021_110000_publish_october_twenty_editorial.down,
     name: '20261021_110000_publish_october_twenty_editorial',
+  },
+  {
+    up: migration_20261104_073000_publish_november_four_editorial.up,
+    down: migration_20261104_073000_publish_november_four_editorial.down,
+    name: '20261104_073000_publish_november_four_editorial',
   },
 ];

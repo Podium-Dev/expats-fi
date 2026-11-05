@@ -429,6 +429,26 @@ Downloaded on September 5, 2026 through the licensed Unlimphotos account connect
 - Permission: Kevin Kallombo approved the Expats.fi listing and the use of a small selection of images from the Kallombo Studios website by email on October 6, 2026.
 - Treatment: Resized and compressed to WebP for the directory. The photographed scenes were not altered.
 
+## Unsplash news images added 5 November 2026
+
+Used under the Unsplash License and retained here so future editors can trace each web-ready derivative to its source.
+
+### HSL contactless fare cap
+
+- Site file: `public/images/news/hsl-contactless-fare-cap-november-2026.webp`
+- Creator: Vagaro
+- Source: `https://unsplash.com/photos/hand-holding-credit-card-near-payment-terminal-WQhAqDw5UWk`
+- Licence: Unsplash License
+- Treatment: Cropped to 16:9, resized and compressed to WebP. Used as representative contactless-payment photography and not as a photograph of an HSL card reader.
+
+### Kela therapy decision reviews
+
+- Site file: `public/images/news/kela-therapy-decisions-2027.webp`
+- Creator: Vitaly Gariev
+- Source: `https://unsplash.com/photos/man-reading-document-at-kitchen-table-with-coffee-4XBvbznJFno`
+- Licence: Unsplash License
+- Treatment: Cropped to 16:9, resized and compressed to WebP. Used as representative household paperwork photography and not as a photograph of a particular Kela customer.
+
 ## Working rule
 
 Do not use an asset marked Editorial License as a decorative or promotional site image. Do not commit the untouched high-resolution source files. Keep only the web-ready derivative required by the site and retain this record for provenance.

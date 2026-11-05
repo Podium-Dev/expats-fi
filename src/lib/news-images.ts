@@ -4,6 +4,14 @@ type NewsImage = {
 }
 
 const newsImages: Record<string, NewsImage> = {
+  'hsl-contactless-fare-cap-november-2026': {
+    src: '/images/news/hsl-contactless-fare-cap-november-2026.webp',
+    alt: 'A passenger holding a contactless bank card over a payment terminal',
+  },
+  'kela-therapy-decisions-2027': {
+    src: '/images/news/kela-therapy-decisions-2027.webp',
+    alt: 'A man reading an important letter at his kitchen table',
+  },
   'finland-unemployment-september-2026': {
     src: '/images/news/finland-unemployment-september-2026.webp',
     alt: 'A laptop with job listings and a CV arranged on a quiet home-office desk',
