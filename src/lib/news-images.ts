@@ -4,6 +4,18 @@ type NewsImage = {
 }
 
 const newsImages: Record<string, NewsImage> = {
+  'student-healthcare-fee-november-2026': {
+    src: '/images/news/student-healthcare-fee-november-2026.webp',
+    alt: 'A university student paying an official fee online from her Helsinki apartment',
+  },
+  'kela-public-notices-2026': {
+    src: '/images/news/kela-public-notices-2026.webp',
+    alt: 'A woman checking an official decision online while holding a posted letter',
+  },
+  'kela-taxi-numbers-2027': {
+    src: '/images/news/kela-taxi-numbers-2027.webp',
+    alt: 'An accessible taxi dropping a passenger outside a Finnish health centre',
+  },
   'hsl-contactless-fare-cap-november-2026': {
     src: '/images/news/hsl-contactless-fare-cap-november-2026.webp',
     alt: 'A passenger holding a contactless bank card over a payment terminal',

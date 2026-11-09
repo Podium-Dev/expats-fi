@@ -452,3 +452,25 @@ Used under the Unsplash License and retained here so future editors can trace ea
 ## Working rule
 
 Do not use an asset marked Editorial License as a decorative or promotional site image. Do not commit the untouched high-resolution source files. Keep only the web-ready derivative required by the site and retain this record for provenance.
+
+## OpenAI-generated news images added 9 November 2026
+
+Created specifically for Expats.fi with the built-in OpenAI image-generation tool. These are representative editorial scenes, not photographs of the people, services or premises discussed in the articles.
+
+### Student healthcare fee
+
+- Site file: `public/images/news/student-healthcare-fee-november-2026.webp`
+- Prompt summary: An international university student calmly paying an official healthcare fee online in a realistic Helsinki apartment.
+- Restrictions applied: No logos, readable interfaces, landmarks or identifying details.
+
+### Kela public notices
+
+- Site file: `public/images/news/kela-public-notices-2026.webp`
+- Prompt summary: An adult resident calmly checking an official decision online while holding a plain posted letter.
+- Restrictions applied: No Kela branding, readable personal information, dramatic reaction or identifiable premises.
+
+### Kela taxi dispatch numbers
+
+- Site file: `public/images/news/kela-taxi-numbers-2027.webp`
+- Prompt summary: An accessible Finnish taxi dropping an adult passenger outside an ordinary modern health centre.
+- Restrictions applied: No taxi branding, readable signage, emergency scene, identifiable health centre or implausible landmark view.
