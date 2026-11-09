@@ -16,6 +16,23 @@ import { absoluteUrl, breadcrumbJsonLd, defaultSocialImage, seoDescription } fro
 
 export const dynamic = 'force-dynamic'
 
+const businessGalleryImages: Record<string, Array<{ src: string; alt: string }>> = {
+  'loaf-sourdough-bakery': [
+    {
+      src: '/businesses/loaf-sourdough-bakery/whole-sourdough-loaf.jpeg',
+      alt: 'A freshly baked LOAF sourdough loaf resting beside a linen cloth and mixing bowl',
+    },
+    {
+      src: '/businesses/loaf-sourdough-bakery/anna-slicing-bread.jpeg',
+      alt: 'LOAF founder Anna slicing a freshly baked loaf at her worktable',
+    },
+    {
+      src: '/businesses/loaf-sourdough-bakery/sourdough-banana-bread.jpeg',
+      alt: 'Slices of LOAF sourdough banana bread arranged beside a plate',
+    },
+  ],
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params
   const business = await getBusiness(slug)
@@ -54,6 +71,7 @@ export default async function BusinessPage({ params }: { params: Promise<{ slug:
     (!business.currentOfferEndsAt || new Date(business.currentOfferEndsAt).getTime() >= requestTime),
   )
   const sameAs = [business.website, business.instagram, business.facebook, business.youtube, business.tiktok].filter((value): value is string => Boolean(value))
+  const galleryImages = businessGalleryImages[business.slug] || []
 
   return (
     <main id="main"><div className="shell detail-shell business-profile">
@@ -77,6 +95,15 @@ export default async function BusinessPage({ params }: { params: Promise<{ slug:
             <p key={`${business.slug}-paragraph-${index}`}>{paragraph}</p>
           ))}
           {business.imagePath && <figure className="business-profile__image" data-business={business.slug}><Image src={business.imagePath} alt={business.imageAlt || business.name} width={1200} height={900} sizes="(max-width: 760px) calc(100vw - 2rem), (max-width: 1280px) 65vw, 47rem" /></figure>}
+          {galleryImages.length > 0 && (
+            <div className="business-profile__gallery" aria-label={`${business.name} photo gallery`}>
+              {galleryImages.map((image) => (
+                <figure key={image.src}>
+                  <Image src={image.src} alt={image.alt} width={900} height={1200} sizes="(max-width: 620px) calc(100vw - 2rem), (max-width: 1280px) 32vw, 23rem" />
+                </figure>
+              ))}
+            </div>
+          )}
         </article>
         <aside className="facts">
           {hasCurrentOffer && <div className="facts__offer"><strong>Current offer</strong><span>{business.currentOffer}</span></div>}

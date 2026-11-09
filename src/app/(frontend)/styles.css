@@ -748,6 +748,11 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.65rem); line-height: 1.25; }
 .business-profile__image { margin: 2rem 0 0; overflow: hidden; border-radius: .9rem; background: var(--blue-pale); }
 .business-profile__image img { display: block; inline-size: 100%; block-size: auto; max-block-size: 36rem; object-fit: cover; }
 .business-profile__image[data-business="vitaldon-therapy"] img { aspect-ratio: 4 / 3; object-position: center 28%; }
+.business-profile__gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-block-start: 1rem; }
+.business-profile__gallery figure { min-inline-size: 0; overflow: hidden; border-radius: .9rem; background: var(--blue-pale); }
+.business-profile__gallery figure:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.business-profile__gallery img { display: block; inline-size: 100%; block-size: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+.business-profile__gallery figure:last-child:nth-child(odd) img { aspect-ratio: 16 / 9; object-position: center 58%; }
 .business-profile__actions { display: flex; flex-wrap: wrap; gap: .7rem; margin-block-start: 1.5rem; }
 .business-profile__actions .save-business-button { min-block-size: 2.8rem; padding-inline: .9rem; font-size: .82rem; }
 .business-profile__neighbourhoods { display: grid; grid-template-columns: minmax(0, .75fr) minmax(24rem, 1.25fr); gap: clamp(2rem, 7vw, 5rem); margin-block-start: 4rem; padding-block: 2.5rem; border-block: 1px solid var(--line); }
@@ -1781,6 +1786,9 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.65rem); line-height: 1.25; }
   .escape-card__facts dl { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .escape-planner__links { grid-column: 1; }
   .business-profile__header, .business-profile__body, .business-profile__neighbourhoods, .article-page__layout, .submission-page, .embassy-profile__header, .embassy-profile__body { grid-template-columns: 1fr; }
+  .business-profile__gallery { grid-template-columns: 1fr; }
+  .business-profile__gallery figure:last-child:nth-child(odd) { grid-column: auto; }
+  .business-profile__gallery figure:last-child:nth-child(odd) img { aspect-ratio: 4 / 5; }
   .business-profile__neighbourhood-links { grid-template-columns: 1fr; }
   .business-profile__mark { grid-row: 1; inline-size: 6rem; }
   .article-aside { position: static; }
