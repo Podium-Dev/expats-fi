@@ -421,6 +421,14 @@ Downloaded on September 5, 2026 through the licensed Unlimphotos account connect
 
 ## Owner-approved business assets
 
+### LOAF Sourdough Bakery
+
+- Site file: `public/businesses/loaf-sourdough-bakery/anna-with-sourdough.jpeg`
+- Site file: `public/businesses/loaf-sourdough-bakery/logo.jpeg`
+- Source: Supplied directly by LOAF founder Anna on 9 November 2026.
+- Permission: Anna approved the Expats.fi directory feature and asked us to choose from the supplied photography, with at least one image of the sourdough bread.
+- Treatment: The files are used as supplied. The main photograph shows Anna holding open one of LOAF's sourdough loaves.
+
 ### Kallombo Studios
 
 - Site file: `public/businesses/kallombo-studios/wedding-photography.webp`
