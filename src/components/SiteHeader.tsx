@@ -17,6 +17,11 @@ export function Logo() {
 export function SiteHeader() {
   return (
     <header className="site-header">
+      <Link className="site-announcement" href="/news/hsl-contactless-fare-cap-november-2026/">
+        <span className="site-announcement__label">New</span>
+        <span>HSL now caps contactless fares over 24 hours</span>
+        <span className="site-announcement__action">See how it works <i aria-hidden="true">→</i></span>
+      </Link>
       <div className="shell site-header__inner">
         <Link href="/" className="site-header__brand" aria-label="Expats.fi home"><Logo /></Link>
         <DesktopNavigation />

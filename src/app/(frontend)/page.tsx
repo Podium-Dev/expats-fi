@@ -44,6 +44,14 @@ const helsinkiHubs = [
   { label: 'Meet people', detail: 'Language cafés, groups, volunteering and routes into community', href: '/community/', icon: 'people' },
 ] as const
 
+const needRoutes = [
+  { label: 'I’ve just arrived', detail: 'Start with the first 90 days', href: '/start-here/first-90-days-in-finland/', icon: 'flag' },
+  { label: 'I need work', detail: 'Jobs, tax and money', href: '/resources/?category=Work%20%26%20money#resource-library', icon: 'case' },
+  { label: 'I have kids', detail: 'Family life and services', href: '/family/', icon: 'people' },
+  { label: 'I need help', detail: 'Find the right support', href: '/help/', icon: 'lifebuoy' },
+  { label: 'I want to get out', detail: 'Events and things to do', href: '/events/', icon: 'calendar' },
+] as const
+
 function QuickIcon({ name }: { name: string }) {
   const paths: Record<string, React.ReactNode> = {
     flag: <><path d="M5 21V4M5 5h12l-2 4 2 4H5" /></>,
@@ -82,24 +90,21 @@ export default async function HomePage() {
       title: nextEvent?.title || 'Find something worth leaving the apartment for.',
       href: nextEvent ? `/events/${nextEvent.slug}/` : '/events/',
       image: '/images/heroes/events-evening-gathering.webp',
+      badges: nextEvent ? [nextEvent.free ? 'Free' : 'Event', nextEvent.dateLabel] : ['Events', 'Updated weekly'],
     },
     {
       eyebrow: 'Fresh from the news desk',
       title: latestStory?.title || 'The Finland stories that actually affect life here.',
       href: latestStory ? `/news/${latestStory.slug}/` : '/news/',
       image: latestStoryImage?.src || '/images/heroes/news-phone-coffee.webp',
+      badges: latestStory ? ['New', `${latestStory.readingMinutes} min read`] : ['News', 'Source checked'],
     },
     {
       eyebrow: 'Find your corner',
       title: 'Eleven Helsinki neighbourhoods, properly unpacked.',
       href: '/areas/',
       image: '/images/heroes/areas-helsinki-street.webp',
-    },
-    {
-      eyebrow: 'Built here',
-      title: 'Meet the expats turning good ideas into local businesses.',
-      href: '/businesses/',
-      image: '/images/heroes/businesses-bookshop-owner.webp',
+      badges: ['11 local guides', 'Explore'],
     },
   ]
 
@@ -130,7 +135,11 @@ export default async function HomePage() {
                 <Link className="button" href="/start-here/">I’m new here</Link>
                 <Link className="button button--quiet" href="/explore/">Explore Helsinki</Link>
               </div>
-              <p className="home-hero__made-here">Built in Finland by two Kiwi expats. Independent and free to use.</p>
+              <ul className="home-trust-points" aria-label="About Expats.fi">
+                <li><strong>Independent</strong><span>Built by two Kiwi expats</span></li>
+                <li><strong>Free to use</strong><span>No account needed for our guides</span></li>
+                <li><strong>Source checked</strong><span>Official links where they matter</span></li>
+              </ul>
             </div>
             <HelsinkiNow initialNow={new Date().toISOString()} weather={weather} />
           </div>
@@ -148,8 +157,8 @@ export default async function HomePage() {
       <section className="home-spotlight" aria-labelledby="home-spotlight-heading">
         <div className="shell">
           <div className="home-spotlight__heading">
-            <div><p className="eyebrow">Now on Expats.fi</p><h2 id="home-spotlight-heading">A little more life, straight from the front door.</h2></div>
-            <p>Fresh stories, upcoming plans and useful ways into the city.</p>
+            <div><p className="eyebrow">Popular right now</p><h2 id="home-spotlight-heading">The useful stuff, without the hunt.</h2></div>
+            <p>One timely event, one fresh update and one good way into the city.</p>
           </div>
           <div className="home-spotlight__rail">
             {homeSpotlights.map((spotlight) => (
@@ -157,6 +166,7 @@ export default async function HomePage() {
                 <Image src={spotlight.image} alt="" fill sizes="(max-width: 640px) 82vw, (max-width: 960px) 44vw, 25vw" />
                 <span className="home-spotlight-card__wash" aria-hidden="true" />
                 <span className="home-spotlight-card__copy">
+                  <span className="home-spotlight-card__badges">{spotlight.badges.map((badge) => <span key={badge}>{badge}</span>)}</span>
                   <small>{spotlight.eyebrow}</small>
                   <strong>{spotlight.title}</strong>
                   <i aria-hidden="true">↗</i>
@@ -178,8 +188,18 @@ export default async function HomePage() {
       <section className="shell section home-pathways" aria-labelledby="pathways-heading">
         <div className="section-heading">
           <div><p className="eyebrow">Living in Finland</p><h2 id="pathways-heading">What do you need help with today?</h2></div>
-          <p>Start with the thing in front of you. The rest of Finland can wait its turn.</p>
+          <p>Pick the sentence that sounds most like today. We will take you to the sensible first stop.</p>
         </div>
+        <div className="home-need-routes" aria-label="Quick routes through Expats.fi">
+          {needRoutes.map((route) => (
+            <Link href={route.href} key={route.label}>
+              <QuickIcon name={route.icon} />
+              <span><strong>{route.label}</strong><small>{route.detail}</small></span>
+              <i aria-hidden="true">→</i>
+            </Link>
+          ))}
+        </div>
+        <p className="home-pathways__all">Or browse everything by topic</p>
         <div className="home-hub-grid">
           {practicalHubs.map((hub) => (
             <Link href={hub.href} key={hub.label}>
