@@ -73,13 +73,13 @@ export default async function EatsPage({ searchParams }: { searchParams: Promise
       />
 
       <section className="shell eats-starts" aria-labelledby="eats-starts-heading">
-        <div className="section-heading"><div><p className="eyebrow">Start with the mood</p><h2 id="eats-starts-heading">What sounds good right now?</h2></div><Link className="text-link" href="/areas/">Browse by neighbourhood <span aria-hidden="true">→</span></Link></div>
+        <div className="section-heading"><div><p className="eyebrow">Start with the mood</p><h2 id="eats-starts-heading">What sounds good <em>right now?</em></h2></div><Link className="text-link" href="/areas/">Browse by neighbourhood <span aria-hidden="true">→</span></Link></div>
         <div className="eats-start-grid">{starts.map((item, index) => <Link href={item.href} key={item.label} aria-current={item.active ? 'page' : undefined}><span>0{index + 1}</span><strong>{item.label}</strong><small>{item.note}</small></Link>)}</div>
       </section>
 
       <section className="finland-plate" aria-labelledby="finland-plate-heading">
         <div className="shell section">
-          <div className="section-heading"><div><p className="eyebrow">Finland on a Plate</p><h2 id="finland-plate-heading">The food makes more sense when you know the story.</h2></div><div><p>Classics, seasonal favourites, supermarket survival and recipes you can actually make.</p><Link className="text-link" href="/eats/finland-on-a-plate/">Open the full collection <span aria-hidden="true">→</span></Link></div></div>
+          <div className="section-heading"><div><p className="eyebrow">Finland on a Plate</p><h2 id="finland-plate-heading">The food makes more sense when you know <em>the story.</em></h2></div><div><p>Classics, seasonal favourites, supermarket survival and recipes you can actually make.</p><Link className="text-link" href="/eats/finland-on-a-plate/">Open the full collection <span aria-hidden="true">→</span></Link></div></div>
           <div className="plate-guide-grid">{finlandFoodGuides.map((guide) => <article className="plate-guide-card" key={guide.slug}><div><span>{guide.number}</span><small>{guide.label}</small></div><h3><Link href={`/eats/finland-on-a-plate/${guide.slug}/`}>{guide.title}</Link></h3><p>{guide.summary}</p><Link className="text-link" href={`/eats/finland-on-a-plate/${guide.slug}/`}>Read the guide <span aria-hidden="true">→</span></Link></article>)}</div>
         </div>
       </section>
@@ -112,7 +112,7 @@ export default async function EatsPage({ searchParams }: { searchParams: Promise
       />
 
       <section className="shell family-local-note">
-        <div><p className="eyebrow">Food & Drink versus the directory</p><h2>Recommendations and business stories do different jobs.</h2></div>
+        <div><p className="eyebrow">Food & Drink versus the directory</p><h2>Recommendations and business stories do <em>different jobs.</em></h2></div>
         <p>Food & Drink is our independent guide to Finnish food and places we think are useful or interesting. The <Link className="text-link" href="/businesses/#business-directory">business directory</Link> is the opt-in home for approved profiles, founder stories and expat-owned businesses. A place can belong in either or both.</p>
       </section>
     </main>

@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import { AccentTitle } from './AccentTitle'
+
 type SectionHeroProps = {
   className?: string
   eyebrow: string
@@ -36,7 +38,7 @@ export function SectionHero({
             fill
             priority
             loading="eager"
-            sizes="100vw"
+            sizes="(max-width: 900px) 100vw, 45vw"
             style={{ objectPosition: image.position ?? 'center' }}
           />
         </div>
@@ -44,7 +46,7 @@ export function SectionHero({
       <div className="shell hub-hero__inner">
         <div className="hub-hero__copy">
           <p className="eyebrow">{eyebrow}</p>
-          <h1>{title}</h1>
+          <h1><AccentTitle>{title}</AccentTitle></h1>
           <p>{intro}</p>
         </div>
         <aside className="hub-hero__note">

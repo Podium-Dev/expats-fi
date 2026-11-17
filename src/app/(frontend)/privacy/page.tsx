@@ -14,7 +14,7 @@ export default function PrivacyPage() {
       <header className="privacy-hero">
         <div className="shell">
           <p className="eyebrow">Privacy at Expats.fi</p>
-          <h1>Plain answers about your data.</h1>
+          <h1>Plain answers about <em>your data.</em></h1>
           <p>We collect the information needed to run accounts, keep the community board safe and understand whether the site is useful. This page explains what that means without burying the important bits.</p>
           <small>Last updated 7 October 2026</small>
         </div>

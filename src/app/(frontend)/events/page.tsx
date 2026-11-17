@@ -66,7 +66,7 @@ export default async function EventsPage({ searchParams }: { searchParams: Promi
       <header className="events-hero photo-hero photo-hero--dark">
         <HeroBackdrop src="/images/heroes/events-evening-gathering.webp" position="center 48%" />
         <div className="shell events-hero__inner">
-          <div><p className="eyebrow">Helsinki, right now</p><h1>Go somewhere. Meet someone. Find your Helsinki.</h1><p>Fresh picks for festivals, gatherings, markets and memorable nights, with the practical details you need before leaving home.</p></div>
+          <div><p className="eyebrow">Helsinki, right now</p><h1>Go somewhere. Meet someone. <em>Find your Helsinki.</em></h1><p>Fresh picks for festivals, gatherings, markets and memorable nights, with the practical details you need before leaving home.</p></div>
           {featured && <div className="events-hero__spotlight"><span>Coming up</span><strong>{featured.title}</strong><p>{featured.dateLabel} · {featured.location}</p><Link href={`/events/${featured.slug}/`}>See the plan →</Link></div>}
         </div>
       </header>
@@ -87,7 +87,7 @@ export default async function EventsPage({ searchParams }: { searchParams: Promi
           <button type="submit">Find events</button>
         </form>
         <EventsMap events={filteredEvents} />
-        {filteredEvents.length ? <div className="event-grid">{filteredEvents.map((event) => <EventCard event={event} key={event.slug} />)}</div> : <div className="empty-state"><h2>No events match those filters</h2><p>Try another category or remove a filter.</p></div>}
+        {filteredEvents.length ? <div className="event-grid">{filteredEvents.map((event) => <EventCard event={event} key={event.slug} />)}</div> : <div className="empty-state"><h2>No events match <em>those filters</em></h2><p>Try another category or remove a filter.</p></div>}
         <div className="event-source-note"><strong>Plans can change.</strong><p>We link every listing to its organiser or a trusted city source. Check the official page before travelling or buying a ticket.</p></div>
       </section>
     </main>

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Schibsted_Grotesk } from 'next/font/google'
+import { Instrument_Serif, Schibsted_Grotesk } from 'next/font/google'
 import type { ReactNode } from 'react'
 
 import { PrivacyConsent } from '@/components/PrivacyConsent'
@@ -14,6 +14,14 @@ import { defaultSocialImage } from '@/lib/seo'
 const schibsted = Schibsted_Grotesk({
   subsets: ['latin'],
   variable: '--font-schibsted',
+  display: 'swap',
+})
+
+const instrumentSerif = Instrument_Serif({
+  subsets: ['latin'],
+  weight: '400',
+  style: ['normal', 'italic'],
+  variable: '--font-instrument',
   display: 'swap',
 })
 
@@ -49,7 +57,7 @@ export const metadata: Metadata = {
 
 export default function FrontendLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={schibsted.variable}>
+    <html lang="en" className={`${schibsted.variable} ${instrumentSerif.variable}`}>
       <body>
         <PrivacyConsent />
         <a className="skip-link" href="#main">Skip to content</a>

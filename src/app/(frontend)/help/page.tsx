@@ -135,7 +135,7 @@ export default function HelpPage() {
 
       <section className="shell family-stages" aria-labelledby="help-route-heading">
         <div className="section-heading">
-          <div><p className="eyebrow">Start with what happened</p><h2 id="help-route-heading">Which problem is in front of you?</h2></div>
+          <div><p className="eyebrow">Start with what happened</p><h2 id="help-route-heading">Which problem is in front <em>of you?</em></h2></div>
           <p>You do not need to understand the whole Finnish system. Pick the closest match and take the first useful step.</p>
         </div>
         <div className="family-stage-grid">
@@ -150,7 +150,7 @@ export default function HelpPage() {
       <section className="family-systems" aria-labelledby="steady-heading">
         <div className="shell section">
           <div className="section-heading family-systems__heading">
-            <div><p className="eyebrow">Before the admin begins</p><h2 id="steady-heading">Make it safe. Save the evidence. Then make the call.</h2></div>
+            <div><p className="eyebrow">Before the admin begins</p><h2 id="steady-heading">Make it safe. Save the evidence. <em>Then make the call.</em></h2></div>
             <p>That order works for most non-emergency problems, from a broken flat to missing wages or a suspicious payment.</p>
           </div>
           <div className="family-system-grid">
@@ -164,7 +164,7 @@ export default function HelpPage() {
 
       <section className="shell section family-guides" aria-labelledby="help-guides-heading">
         <div className="section-heading">
-          <div><p className="eyebrow">The calm route through it</p><h2 id="help-guides-heading">What to do, who can help and what to keep.</h2></div>
+          <div><p className="eyebrow">The calm route through it</p><h2 id="help-guides-heading">What to do, who can help and what <em>to keep.</em></h2></div>
           <p>These are starting points, not substitutes for emergency, medical or legal advice. Use the linked official service for your exact situation.</p>
         </div>
         <div className="family-guide-grid">
@@ -185,7 +185,7 @@ export default function HelpPage() {
       </section>
 
       <section className="shell family-local-note">
-        <div><p className="eyebrow">A useful habit</p><h2>Save this page before you need it.</h2></div>
+        <div><p className="eyebrow">A useful habit</p><h2>Save this page before you <em>need it.</em></h2></div>
         <p>Official numbers and opening arrangements can change. We check this hub, but the linked authority is always the final word. If you spot something that has moved, email <a className="text-link" href="mailto:moi@expats.fi">moi@expats.fi</a> and we will sort it.</p>
       </section>
 

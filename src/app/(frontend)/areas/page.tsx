@@ -68,7 +68,7 @@ export default function AreasPage() {
       <section className="family-systems" aria-labelledby="area-mood-heading">
         <div className="shell section">
           <div className="section-heading family-systems__heading">
-            <div><p className="eyebrow">Choose by mood</p><h2 id="area-mood-heading">What kind of Helsinki day do you need?</h2></div>
+            <div><p className="eyebrow">Choose by mood</p><h2 id="area-mood-heading">What kind of Helsinki day do <em>you need?</em></h2></div>
             <p>No definitive top-ten nonsense. Pick an area that suits the weather, budget and energy you actually have.</p>
           </div>
           <div className="family-system-grid">
@@ -88,7 +88,7 @@ export default function AreasPage() {
 
       <section className="shell section family-guides" aria-labelledby="area-guides-heading">
         <div className="section-heading">
-          <div><p className="eyebrow">The local guides</p><h2 id="area-guides-heading">Eleven neighbourhoods, properly explored.</h2></div>
+          <div><p className="eyebrow">The local guides</p><h2 id="area-guides-heading">Eleven neighbourhoods, <em>properly explored.</em></h2></div>
           <p>Each guide has food for different budgets, things worth doing, a half-day route and an honest look at what living there can feel like.</p>
         </div>
         {guideGroups.map((group) => {
@@ -117,7 +117,7 @@ export default function AreasPage() {
       </section>
 
       <section className="shell family-local-note">
-        <div><p className="eyebrow">A useful distinction</p><h2>Featured is not the same as partnered.</h2></div>
+        <div><p className="eyebrow">A useful distinction</p><h2>Featured is not the same <em>as partnered.</em></h2></div>
         <p>These are independent editorial recommendations based on current research, trusted local sources and what makes an area useful. We do not need a business’s permission to mention publicly available details. We do ask before using its photographs, logo or supplied story.<br /><Link className="text-link" href="/explore/">Browse individual places and attractions →</Link></p>
       </section>
     </main>

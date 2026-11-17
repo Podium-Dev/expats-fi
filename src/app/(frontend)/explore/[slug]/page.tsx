@@ -94,11 +94,11 @@ export default async function ExploreListingPage({ params }: { params: Promise<{
 
         <div className="explore-profile__layout">
           <article className="explore-profile__story">
-            <p className="eyebrow">Why go</p><h2>What makes it worth your time</h2>
+            <p className="eyebrow">Why go</p><h2>What makes it worth <em>your time</em></h2>
             {listing.description.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
 
-            <section className="explore-profile__highlights"><p className="eyebrow">The useful bits</p><h2>Good to know before you go</h2><ul>{listing.highlights.map((item) => <li key={item}>{item}</li>)}</ul></section>
-            {listing.slug === 'oodi' && <section className="explore-profile__visit"><p className="eyebrow">Looking for the cinema?</p><h2>Kino Regina is inside Oodi.</h2><p>The National Audiovisual Institute runs the cinema separately from the library. Check the individual film language and subtitle details before booking.</p><Link className="text-link" href="/explore/kino-regina/">Open the Kino Regina guide <span aria-hidden="true">→</span></Link></section>}
+            <section className="explore-profile__highlights"><p className="eyebrow">The useful bits</p><h2>Good to know before <em>you go</em></h2><ul>{listing.highlights.map((item) => <li key={item}>{item}</li>)}</ul></section>
+            {listing.slug === 'oodi' && <section className="explore-profile__visit"><p className="eyebrow">Looking for the cinema?</p><h2>Kino Regina is <em>inside Oodi.</em></h2><p>The National Audiovisual Institute runs the cinema separately from the library. Check the individual film language and subtitle details before booking.</p><Link className="text-link" href="/explore/kino-regina/">Open the Kino Regina guide <span aria-hidden="true">→</span></Link></section>}
             <section className="explore-profile__visit"><p className="eyebrow">Your first move</p><h2>How to visit</h2><p>{listing.howToVisit}</p><div><strong>One more thing</strong><p>{listing.goodToKnow}</p></div><a className="button" href={listing.website} target="_blank" rel="noreferrer">Open official information ↗</a></section>
             <section className="event-detail__transport"><p className="eyebrow">Getting there</p><h2>Choose your route</h2><div>{listing.transport.map((option) => <section key={option.mode}><strong>{option.mode}</strong><p>{option.advice}</p></section>)}</div><a className="text-link" href="https://www.hsl.fi/en" target="_blank" rel="noreferrer">Open the HSL Journey Planner <span aria-hidden="true">↗</span></a></section>
           </article>

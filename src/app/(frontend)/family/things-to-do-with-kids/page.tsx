@@ -181,7 +181,7 @@ export default async function ThingsToDoWithKidsPage() {
 
       <section className="shell section" aria-labelledby="kids-choose-heading">
         <div className="section-heading">
-          <div><p className="eyebrow">Choose your day</p><h2 id="kids-choose-heading">What sort of mission are we talking?</h2></div>
+          <div><p className="eyebrow">Choose your day</p><h2 id="kids-choose-heading">What sort of mission are <em>we talking?</em></h2></div>
           <p>No endless catalogue. Just useful starting points grouped around the decision parents are actually making.</p>
         </div>
         <div className="kids-choice-grid">
@@ -196,7 +196,7 @@ export default async function ThingsToDoWithKidsPage() {
       <section className="kids-events" id="coming-up" aria-labelledby="kids-events-heading">
         <div className="shell section">
           <div className="section-heading">
-            <div><p className="eyebrow">Coming up</p><h2 id="kids-events-heading">Family-friendly events already on the calendar.</h2></div>
+            <div><p className="eyebrow">Coming up</p><h2 id="kids-events-heading">Family-friendly events already on <em>the calendar.</em></h2></div>
             <p>These move quickly, so we surface the next useful options here and keep the full event guide one click away.</p>
           </div>
           {familyEvents.length > 0 ? (
@@ -238,7 +238,7 @@ export default async function ThingsToDoWithKidsPage() {
       </section>
 
       <section className="shell kids-more">
-        <div><p className="eyebrow">Keep exploring</p><h2>Need more than the short list?</h2><p>Browse every family-friendly place we have checked, or head back to the Family hub for daycare, schools, healthcare and the serious stuff.</p></div>
+        <div><p className="eyebrow">Keep exploring</p><h2>Need more than the <em>short list?</em></h2><p>Browse every family-friendly place we have checked, or head back to the Family hub for daycare, schools, healthcare and the serious stuff.</p></div>
         <div><Link className="button" href="/explore/?category=Family%20favourites#browse">All family favourites</Link><Link className="button button--secondary" href="/family/">Back to Family life</Link></div>
       </section>
     </main>

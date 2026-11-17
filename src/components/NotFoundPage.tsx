@@ -14,7 +14,7 @@ export function NotFoundPage() {
         <div className="status-page__code" aria-hidden="true">404</div>
         <div className="status-page__copy">
           <p className="eyebrow">Well, this is awkward</p>
-          <h1 id="not-found-heading">That page has wandered off.</h1>
+          <h1 id="not-found-heading">That page has <em>wandered off.</em></h1>
           <p>The link may be old, the page may have moved, or Finland has quietly filed it somewhere sensible without telling either of us.</p>
           <form className="status-page__search" action="/search/" method="get" role="search">
             <label htmlFor="missing-page-search">What were you trying to find?</label>

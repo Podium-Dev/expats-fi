@@ -13,7 +13,7 @@ export function HeroBackdrop({ src, position = 'center' }: HeroBackdropProps) {
         alt=""
         fill
         priority
-        sizes="100vw"
+        sizes="(max-width: 900px) 100vw, 45vw"
         style={{ objectPosition: position }}
       />
     </div>

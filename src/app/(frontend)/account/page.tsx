@@ -89,7 +89,7 @@ export default async function AccountPage() {
             <section className="account-welcome" aria-labelledby="account-welcome-title">
               <div className="account-welcome__intro">
                 <p className="eyebrow">A good place to begin</p>
-                <h2 id="account-welcome-title">Settle in at your own pace.</h2>
+                <h2 id="account-welcome-title">Settle in at your <em>own pace.</em></h2>
                 <p>You do not need to fill in everything today. Pick whichever of these would make the site more useful right now.</p>
               </div>
               <div className="account-welcome__steps">

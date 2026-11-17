@@ -9,7 +9,7 @@ export default function ErrorPage({ reset }: { error: Error & { digest?: string 
         <div className="status-page__code" aria-hidden="true">Oops</div>
         <div className="status-page__copy">
           <p className="eyebrow">A small wobble at our end</p>
-          <h1 id="error-heading">That page did not load properly.</h1>
+          <h1 id="error-heading">That page did not <em>load properly.</em></h1>
           <p>You have not done anything wrong. Give it another go, head back to the homepage, or let us know if it keeps happening.</p>
           <div className="status-page__actions">
             <button className="button" type="button" onClick={reset}>Try again</button>

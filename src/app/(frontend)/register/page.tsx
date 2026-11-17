@@ -16,7 +16,7 @@ export default async function RegisterPage({ searchParams }: { searchParams: Pro
       <div className="shell auth-page__layout">
         <section className="auth-page__intro">
           <Link className="back-link" href="/">← Back to Expats.fi</Link>
-          <h1>Make Finland feel more familiar.</h1>
+          <h1>Make Finland feel <em>more familiar.</em></h1>
           <p>Create an account to keep the useful bits together and take part when you have a question, a recommendation or something worth sharing.</p>
           <ul className="auth-benefits" aria-label="What your account includes">
             <li><span aria-hidden="true">01</span><strong>Save the guides you will actually need again.</strong></li>

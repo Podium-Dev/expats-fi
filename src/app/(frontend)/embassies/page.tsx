@@ -42,7 +42,7 @@ export default async function EmbassiesPage({ searchParams }: { searchParams: Pr
         <HeroBackdrop src="/images/heroes/embassies-international-flags.webp" position="center 50%" />
         <div className="shell page-hero__inner">
           <p className="eyebrow">Diplomatic directory</p>
-          <h1>Find your country’s representation in Finland.</h1>
+          <h1>Find your country’s representation <em>in Finland.</em></h1>
           <p>Every country is included. Where there is no embassy in Finland, we show the accredited embassy abroad, an honorary consulate, or the best official fallback.</p>
           <div className="coverage-summary" aria-label="Directory coverage">
             <strong>{allEmbassies.length} countries covered</strong>

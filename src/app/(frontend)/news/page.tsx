@@ -40,7 +40,7 @@ export default async function NewsPage({ searchParams }: { searchParams: Promise
         <div className="shell news-hero__inner">
           <div>
             <p className="eyebrow">Expats.fi News</p>
-            <h1>News from Finland, minus the waffle.</h1>
+            <h1>News from Finland, <em>minus the waffle.</em></h1>
             <p>We follow the stories that affect life here, dig into the useful bits and explain them like a mate who has already fought through the official paperwork.</p>
           </div>
           <aside className="news-hero__note">
@@ -70,7 +70,7 @@ export default async function NewsPage({ searchParams }: { searchParams: Promise
             </div>
           </article>
         ) : (
-          <div className="empty-state"><h2>No stories in this topic yet</h2><p>We are working through the useful stuff. Try all news for now.</p></div>
+          <div className="empty-state"><h2>No stories in this <em>topic yet</em></h2><p>We are working through the useful stuff. Try all news for now.</p></div>
         )}
       </section>
 
@@ -83,7 +83,7 @@ export default async function NewsPage({ searchParams }: { searchParams: Promise
 
       <section className="news-method">
         <div className="shell news-method__inner">
-          <div><p className="eyebrow">How we cover Finland</p><h2>We do not just swap a few words around.</h2></div>
+          <div><p className="eyebrow">How we cover Finland</p><h2>We do not just swap a few <em>words around.</em></h2></div>
           <div className="news-method__steps">
             <article><span>01</span><strong>Check the facts</strong><p>We begin with official information and reliable reporting, then link the sources so you can inspect them yourself.</p></article>
             <article><span>02</span><strong>Add the missing context</strong><p>What led here, who is affected and what the headline leaves unexplained.</p></article>
@@ -93,7 +93,7 @@ export default async function NewsPage({ searchParams }: { searchParams: Promise
       </section>
 
       <section className="shell news-letter section" aria-label="Newsletter preview">
-        <div><p className="eyebrow">Monthly newsletter in the works</p><h2>The Finland catch-up, straight to your inbox.</h2><p>One friendly monthly wrap of what happened, the useful bits you may have missed and what is worth having on the radar for the month ahead.</p></div>
+        <div><p className="eyebrow">Monthly newsletter in the works</p><h2>The Finland catch-up, <em>straight to your inbox.</em></h2><p>One friendly monthly wrap of what happened, the useful bits you may have missed and what is worth having on the radar for the month ahead.</p></div>
         <div className="news-letter__status"><span>Get on the list</span><strong>Switch it on in your Expats.fi account.</strong><p>We are still connecting the delivery side. Create a free account, choose the monthly newsletter in your preferences and you will be ready when the first edition goes out.</p><div className="news-letter__actions"><Link href="/register/">Create an account</Link><Link href="/account/">Newsletter preferences</Link></div></div>
       </section>
     </main>

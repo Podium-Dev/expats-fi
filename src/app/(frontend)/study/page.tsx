@@ -52,7 +52,7 @@ export default function StudyPage() {
 
       <section className="shell family-stages" aria-labelledby="study-routes-heading">
         <div className="section-heading">
-          <div><p className="eyebrow">Start with the outcome</p><h2 id="study-routes-heading">What are you hoping study will change?</h2></div>
+          <div><p className="eyebrow">Start with the outcome</p><h2 id="study-routes-heading">What are you hoping study <em>will change?</em></h2></div>
           <p>The institution comes second. First work out whether you need a degree, a profession, Finnish for working life or a smaller step back into learning.</p>
         </div>
         <div className="family-stage-grid">
@@ -67,7 +67,7 @@ export default function StudyPage() {
       <section className="study-map" aria-labelledby="study-map-heading">
         <div className="shell section">
           <div className="section-heading study-map__heading">
-            <div><p className="eyebrow">The education map</p><h2 id="study-map-heading">Three systems that do different jobs.</h2></div>
+            <div><p className="eyebrow">The education map</p><h2 id="study-map-heading">Three systems that do <em>different jobs.</em></h2></div>
             <p>They can all lead somewhere good. The difference is how academic, professional or hands-on you need the route to be.</p>
           </div>
           <div className="study-system-grid">
@@ -81,7 +81,7 @@ export default function StudyPage() {
 
       <section className="shell section family-guides" aria-labelledby="study-guides-heading">
         <div className="section-heading">
-          <div><p className="eyebrow">The properly useful guides</p><h2 id="study-guides-heading">Choose the route before choosing the school.</h2></div>
+          <div><p className="eyebrow">The properly useful guides</p><h2 id="study-guides-heading">Choose the route before choosing <em>the school.</em></h2></div>
           <p>Every guide includes the catches, the application logic and the official place to check the current rules.</p>
         </div>
         <div className="family-guide-grid">
@@ -99,7 +99,7 @@ export default function StudyPage() {
       <section className="study-providers" aria-labelledby="study-providers-heading">
         <div className="shell section">
           <div className="section-heading study-providers__heading">
-            <div><p className="eyebrow">Helsinki region starting points</p><h2 id="study-providers-heading">Schools worth knowing by type.</h2></div>
+            <div><p className="eyebrow">Helsinki region starting points</p><h2 id="study-providers-heading">Schools worth knowing <em>by type.</em></h2></div>
             <p>This is a practical starting list, not a ranking. Search Studyinfo for the full national picture and the exact programme open today.</p>
           </div>
           {providerTypes.map((type) => (
@@ -119,7 +119,7 @@ export default function StudyPage() {
       </section>
 
       <section className="shell family-local-note">
-        <div><p className="eyebrow">Already qualified abroad?</p><h2>You may not need another entire degree.</h2></div>
+        <div><p className="eyebrow">Already qualified abroad?</p><h2>You may not need another <em>entire degree.</em></h2></div>
         <p>Start by checking whether your profession is regulated and speak with a SIMHE higher-education guidance service. Recognition, bridging studies or a smaller qualification may be the sensible answer. Repeating five years of education should not be the default plan.</p>
       </section>
 

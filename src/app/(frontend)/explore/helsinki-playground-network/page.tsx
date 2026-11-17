@@ -251,7 +251,7 @@ export default function HelsinkiPlaygroundsPage() {
       <section className="playground-quick-picks" aria-labelledby="playground-quick-heading">
         <div className="shell section">
           <div className="section-heading">
-            <div><p className="eyebrow">Choose quickly</p><h2 id="playground-quick-heading">A few good places to start.</h2></div>
+            <div><p className="eyebrow">Choose quickly</p><h2 id="playground-quick-heading">A few good places <em>to start.</em></h2></div>
             <p>Four useful options for different family days, from indoor backup and fenced spaces to room for older children to move.</p>
           </div>
           <div className="playground-quick-grid">
@@ -269,7 +269,7 @@ export default function HelsinkiPlaygroundsPage() {
 
       <section className="shell section playground-directory" id="featured-playgrounds" aria-labelledby="playground-directory-heading">
         <div className="section-heading">
-          <div><p className="eyebrow">Eight deeper picks</p><h2 id="playground-directory-heading">Find one that earns the journey.</h2></div>
+          <div><p className="eyebrow">Eight deeper picks</p><h2 id="playground-directory-heading">Find one that earns <em>the journey.</em></h2></div>
           <p>Every practical detail below was checked against the City of Helsinki. Photos are licensed illustrations, not pictures of the named playgrounds.</p>
         </div>
         <div className="playground-grid">
@@ -298,7 +298,7 @@ export default function HelsinkiPlaygroundsPage() {
       <section className="playground-all" id="all-playgrounds" aria-labelledby="all-playgrounds-heading">
         <div className="shell section">
           <div className="section-heading">
-            <div><p className="eyebrow">The full staffed network</p><h2 id="all-playgrounds-heading">Every Helsinki playground in the city directory.</h2></div>
+            <div><p className="eyebrow">The full staffed network</p><h2 id="all-playgrounds-heading">Every Helsinki playground in the <em>city directory.</em></h2></div>
             <p>All 62 are listed alphabetically. Open the official page for current hours and activities, plan a public-transport journey with HSL or open the destination in Google Maps.</p>
           </div>
           <ol className="playground-all-grid">
@@ -324,7 +324,7 @@ export default function HelsinkiPlaygroundsPage() {
 
       <section className="playground-system" id="how-the-system-works" aria-labelledby="playground-system-heading">
         <div className="shell section playground-system__inner">
-          <div><p className="eyebrow">How the system works</p><h2 id="playground-system-heading">The free bits parents often discover too late.</h2><p>The city’s playground network is one of Helsinki’s genuinely brilliant family services. It is also spread across enough pages and Finnish terminology to be easy to miss when you have just arrived.</p></div>
+          <div><p className="eyebrow">How the system works</p><h2 id="playground-system-heading">The free bits parents often discover <em>too late.</em></h2><p>The city’s playground network is one of Helsinki’s genuinely brilliant family services. It is also spread across enough pages and Finnish terminology to be easy to miss when you have just arrived.</p></div>
           <ol>
             <li><span>01</span><div><strong>Drop-in play and guided mornings</strong><p>Many playgrounds run free indoor and outdoor activities for babies and young children. Most drop-in sessions do not require advance registration.</p></div></li>
             <li><span>02</span><div><strong>Playground clubs for ages 2 to 4</strong><p>Free clubs meet a few times a week for children cared for at home. Places require an application and activities are in Finnish.</p></div></li>
@@ -335,7 +335,7 @@ export default function HelsinkiPlaygroundsPage() {
       </section>
 
       <section className="shell playground-links">
-        <div><p className="eyebrow">Go wider</p><h2>Need an ordinary neighbourhood play area?</h2><p>The 62 places above are the staffed playground network. Helsinki’s Service Map also covers more than 200 smaller play areas, while the city finder is the final word on live playground programmes and opening arrangements.</p></div>
+        <div><p className="eyebrow">Go wider</p><h2>Need an ordinary neighbourhood <em>play area?</em></h2><p>The 62 places above are the staffed playground network. Helsinki’s Service Map also covers more than 200 smaller play areas, while the city finder is the final word on live playground programmes and opening arrangements.</p></div>
         <div>
           <a className="button" href="https://www.hel.fi/en/childhood-and-education/playgrounds-and-family-houses/find-playgrounds-and-family-houses" target="_blank" rel="noreferrer">Check the city finder ↗</a>
           <Link className="button button--secondary" href="/family/things-to-do-with-kids/">More things to do with kids</Link>

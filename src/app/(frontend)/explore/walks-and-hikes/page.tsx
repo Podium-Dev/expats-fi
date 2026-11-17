@@ -39,13 +39,13 @@ export default function WalksAndHikesPage() {
       </nav>
 
       <section className="shell section" id="map">
-        <div className="section-heading hike-page-heading"><div><p className="eyebrow">Nine good starting points</p><h2>Choose by place, time or facilities.</h2></div><p>This first collection stays close enough to Helsinki for a realistic day out. More Uusimaa routes will follow once their practical details have been checked properly.</p></div>
+        <div className="section-heading hike-page-heading"><div><p className="eyebrow">Nine good starting points</p><h2>Choose by place, <em>time or facilities.</em></h2></div><p>This first collection stays close enough to Helsinki for a realistic day out. More Uusimaa routes will follow once their practical details have been checked properly.</p></div>
         <HikesMap hikes={hikeGuides} />
       </section>
 
       <section className="hike-guides" id="guides" aria-labelledby="hike-guides-heading">
         <div className="shell section">
-          <div className="section-heading hike-page-heading"><div><p className="eyebrow">Know what you are walking into</p><h2 id="hike-guides-heading">The useful details for each place.</h2></div><p>These are starting guides, not promises that every toilet is open or every shelter has wood. Always open the official source before travelling.</p></div>
+          <div className="section-heading hike-page-heading"><div><p className="eyebrow">Know what you are walking into</p><h2 id="hike-guides-heading">The useful details for <em>each place.</em></h2></div><p>These are starting guides, not promises that every toilet is open or every shelter has wood. Always open the official source before travelling.</p></div>
           <div className="hike-guide-list">
             {hikeGuides.map((hike, index) => (
               <article className="hike-guide" id={hike.slug} key={hike.slug}>
@@ -83,7 +83,7 @@ export default function WalksAndHikesPage() {
 
       <section className="hike-fire" id="fire-safety" aria-labelledby="fire-safety-heading">
         <div className="shell section hike-fire__inner">
-          <div><p className="eyebrow">Before the sausages come out</p><h2 id="fire-safety-heading">Four fire rules that prevent a very Finnish telling-off.</h2><p>Rules belong to the specific landowner and nature area. “There was already a circle of stones” does not make it an official campfire site.</p></div>
+          <div><p className="eyebrow">Before the sausages come out</p><h2 id="fire-safety-heading">Four fire rules that prevent a very <em>Finnish telling-off.</em></h2><p>Rules belong to the specific landowner and nature area. “There was already a circle of stones” does not make it an official campfire site.</p></div>
           <ol>
             <li><span>01</span><div><strong>Use a designated fire site</strong><p>Open fire requires the landowner’s permission. Use the maintained shelter or fireplace shown by the official area information.</p></div></li>
             <li><span>02</span><div><strong>Check the warning</strong><p>Open <a href="https://en.ilmatieteenlaitos.fi/warnings" target="_blank" rel="noreferrer">the Finnish Meteorological Institute warning map</a> on the day. Restrictions can override the nice plan.</p></div></li>
@@ -94,7 +94,7 @@ export default function WalksAndHikesPage() {
       </section>
 
       <section className="shell section hike-checklist" id="before-you-go" aria-labelledby="hike-checklist-heading">
-        <div><p className="eyebrow">Five minutes before leaving</p><h2 id="hike-checklist-heading">The boring checks make the good day possible.</h2></div>
+        <div><p className="eyebrow">Five minutes before leaving</p><h2 id="hike-checklist-heading">The boring checks make the good <em>day possible.</em></h2></div>
         <ul>
           <li><strong>Exact starting point</strong><span>Large nature areas have several entrances that do not conveniently connect.</span></li>
           <li><strong>Return connection</strong><span>Save one backup bus and remember that rural Sunday service is not metro service.</span></li>

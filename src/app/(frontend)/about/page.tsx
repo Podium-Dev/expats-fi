@@ -54,7 +54,7 @@ export default function AboutPage() {
       <section className="shell section about-origin" aria-labelledby="about-origin-heading">
         <div>
           <p className="eyebrow">How this started</p>
-          <h2 id="about-origin-heading">After years here, the simple stuff was still far too hard to find.</h2>
+          <h2 id="about-origin-heading">After years here, the simple stuff was still far too hard <em>to find.</em></h2>
         </div>
         <div className="about-origin__story">
           <p>We are two Kiwi mates who have both spent years building lives in Finland. People arrive here for all sorts of reasons: work, study, family, love, adventure or simply the chance to try something new. The details are different for everyone, but sooner or later most of us end up trying to work out what needs doing, which office actually handles it and whether the short Finnish email we just received is bad news or simply a short Finnish email.</p>
@@ -66,7 +66,7 @@ export default function AboutPage() {
       <section className="about-principles" aria-labelledby="about-principles-heading">
         <div className="shell section">
           <div className="section-heading">
-            <div><p className="eyebrow">What matters to us</p><h2 id="about-principles-heading">Clear enough to use. Human enough to trust.</h2></div>
+            <div><p className="eyebrow">What matters to us</p><h2 id="about-principles-heading">Clear enough to use. <em>Human enough to trust.</em></h2></div>
             <p>We are not trying to replace Finnish authorities or pretend every expat has the same experience. We are trying to make the next step easier to see.</p>
           </div>
           <div className="about-principles__grid">
@@ -84,7 +84,7 @@ export default function AboutPage() {
       <section className="shell section about-method" aria-labelledby="about-method-heading">
         <div>
           <p className="eyebrow">How we work</p>
-          <h2 id="about-method-heading">Useful information you can trust</h2>
+          <h2 id="about-method-heading">Useful information you <em>can trust</em></h2>
           <p>For practical guides and news, we begin with official and primary sources wherever possible. We check dates, keep the source links visible and update things as the details move. Community posts can tell us what people are worried about, but they are never treated as proof on their own.</p>
           <p>Business listings and directory features are written in our own voice. Where we are working directly with an owner, we send the piece through so they can correct the facts before it goes live. The warmth is ours. Their story remains theirs.</p>
         </div>
@@ -99,7 +99,7 @@ export default function AboutPage() {
         <div className="shell section about-community__inner">
           <div>
             <p className="eyebrow">Where this is heading</p>
-            <h2 id="about-community-heading">A useful site, with a real community behind it.</h2>
+            <h2 id="about-community-heading">A useful site, with a real community <em>behind it.</em></h2>
           </div>
           <div>
             <p>We want Expats.fi to become somewhere people can ask honest questions, share local knowledge, suggest events, find familiar faces and help us notice the gaps we have missed.</p>
@@ -114,7 +114,7 @@ export default function AboutPage() {
 
       <section className="shell section about-invitation" aria-labelledby="about-invitation-heading">
         <p className="eyebrow">Help us make it better</p>
-        <h2 id="about-invitation-heading">What took you far too long to figure out?</h2>
+        <h2 id="about-invitation-heading">What took you far too long to <em>figure out?</em></h2>
         <p>If something confused you when you arrived, there is a fair chance somebody else is wrestling with it now. Tell us what is missing, point us towards a brilliant local project or let us know when a useful detail has changed.</p>
         <div className="about-invitation__actions">
           <a className="button" href="mailto:moi@expats.fi?subject=An%20idea%20for%20Expats.fi">Email moi@expats.fi</a>

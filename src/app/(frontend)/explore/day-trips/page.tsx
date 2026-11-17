@@ -73,7 +73,7 @@ export default function DayTripsPage() {
         <div className="section-heading">
           <div>
             <p className="eyebrow">How much day have you got?</p>
-            <h2 id="escape-chooser-heading">Pick the effort level first.</h2>
+            <h2 id="escape-chooser-heading">Pick the effort <em>level first.</em></h2>
           </div>
           <p>A good day trip should clear your head, not leave you stranded at a rural bus stop with four percent battery.</p>
         </div>
@@ -145,7 +145,7 @@ export default function DayTripsPage() {
         <div className="shell section escape-planner__inner">
           <div>
             <p className="eyebrow">Before you walk out the door</p>
-            <h2 id="trip-planner-heading">Five checks save a surprisingly large amount of nonsense.</h2>
+            <h2 id="trip-planner-heading">Five checks save a surprisingly large amount <em>of nonsense.</em></h2>
             <p>Rural and seasonal transport is less forgiving than an HSL tram. Give the return journey the same attention as the nice café you found on Instagram.</p>
           </div>
           <ol>

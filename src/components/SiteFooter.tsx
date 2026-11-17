@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { Logo } from './SiteHeader'
 import { SocialLinks } from './SocialLinks'
 
 export function SiteFooter() {
@@ -7,12 +6,8 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="shell site-footer__grid">
         <div className="site-footer__intro">
-          <Link href="/" aria-label="Expats.fi home"><Logo /></Link>
           <p>An independent guide to moving to, living in and settling in Finland.</p>
-          <div className="site-footer__connect">
-            <strong>Connect with us</strong>
-            <SocialLinks />
-          </div>
+          <SocialLinks />
         </div>
         <nav aria-label="Guide categories">
           <strong>Guides</strong>
@@ -52,9 +47,12 @@ export function SiteFooter() {
           <Link href="/sitemap.xml">Sitemap</Link>
         </nav>
       </div>
-      <div className="shell site-footer__bottom">
-        <span>© {new Date().getFullYear()} expats.fi</span>
-        <span>Not affiliated with any Finnish authority.</span>
+      <div className="site-footer__wordmark" aria-hidden="true">expats<span>.fi</span></div>
+      <div className="site-footer__bottom">
+        <div className="shell">
+          <span>© {new Date().getFullYear()} expats.fi</span>
+          <span>Not affiliated with any Finnish authority.</span>
+        </div>
       </div>
     </footer>
   )

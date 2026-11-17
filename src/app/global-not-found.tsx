@@ -1,4 +1,4 @@
-import { Schibsted_Grotesk } from 'next/font/google'
+import { Instrument_Serif, Schibsted_Grotesk } from 'next/font/google'
 
 import { NotFoundPage } from '@/components/NotFoundPage'
 import { SiteFooter } from '@/components/SiteFooter'
@@ -12,9 +12,17 @@ const schibsted = Schibsted_Grotesk({
   display: 'swap',
 })
 
+const instrumentSerif = Instrument_Serif({
+  subsets: ['latin'],
+  weight: '400',
+  style: ['normal', 'italic'],
+  variable: '--font-instrument',
+  display: 'swap',
+})
+
 export default function GlobalNotFound() {
   return (
-    <html lang="en" className={schibsted.variable}>
+    <html lang="en" className={`${schibsted.variable} ${instrumentSerif.variable}`}>
       <head><title>Page not found | Expats.fi</title><meta name="robots" content="noindex, follow" /></head>
       <body>
         <a className="skip-link" href="#main">Skip to content</a>

@@ -77,7 +77,7 @@ export default async function ExplorePage({ searchParams }: { searchParams: Prom
         <div className="shell explore-hero__inner">
           <div>
             <p className="eyebrow">Helsinki, beyond the paperwork</p>
-            <h1>Go out. Look around. Make this place yours.</h1>
+            <h1>Go out. Look around. <em>Make this place yours.</em></h1>
             <p>Museums, islands, cinemas, beaches, saunas, playgrounds and brilliant public spaces, with the price, free days and transport explained before you leave home.</p>
           </div>
           <aside className="explore-hero__aside">
@@ -95,7 +95,7 @@ export default async function ExplorePage({ searchParams }: { searchParams: Prom
 
       <section className="explore-outdoors" id="outdoors" aria-labelledby="outdoors-heading">
         <div className="shell section">
-          <div className="section-heading explore-outdoors__heading"><div><p className="eyebrow">Outdoors, without the guesswork</p><h2 id="outdoors-heading">Find the water, forest or fresh air you need.</h2></div><p>Start with the kind of day you want. We will point you towards the route, permit or practical check that belongs with it.</p></div>
+          <div className="section-heading explore-outdoors__heading"><div><p className="eyebrow">Outdoors, without the guesswork</p><h2 id="outdoors-heading">Find the water, forest or fresh air <em>you need.</em></h2></div><p>Start with the kind of day you want. We will point you towards the route, permit or practical check that belongs with it.</p></div>
           <div className="explore-outdoor-grid">
             {outdoorRoutes.map((route) => <Link href={route.href} id={route.number === '01' ? 'fishing-guide' : undefined} key={route.title}><span>{route.number}</span><small>{route.eyebrow}</small><strong>{route.title}</strong><p>{route.description}</p><i aria-hidden="true">→</i></Link>)}
           </div>
@@ -103,7 +103,7 @@ export default async function ExplorePage({ searchParams }: { searchParams: Prom
       </section>
 
       <section className="shell explore-branches" aria-labelledby="explore-branches-heading">
-        <div className="section-heading"><div><p className="eyebrow">Choose a direction</p><h2 id="explore-branches-heading">What kind of day are we having?</h2></div><p>Start with a mood. The filters below handle the practical details.</p></div>
+        <div className="section-heading"><div><p className="eyebrow">Choose a direction</p><h2 id="explore-branches-heading">What kind of day are <em>we having?</em></h2></div><p>Start with a mood. The filters below handle the practical details.</p></div>
         <div className="explore-branch-grid">
           {branches.map((branch, index) => <Link key={branch.label} href={`/explore/?category=${encodeURIComponent(branch.label)}#browse`} aria-current={category === branch.label ? 'page' : undefined}><span>0{index + 1}</span><strong>{branch.label}</strong><small>{branch.note}</small></Link>)}
         </div>
@@ -126,13 +126,13 @@ export default async function ExplorePage({ searchParams }: { searchParams: Prom
       </section>
 
       <section className="shell explore-free section" id="free-days" aria-labelledby="free-days-heading">
-        <div className="explore-free__intro"><p className="eyebrow">Save the dates</p><h2 id="free-days-heading">Upcoming free days in 2026</h2><p>These are the useful dates still ahead this year. Regular always-free places are in the main directory.</p></div>
+        <div className="explore-free__intro"><p className="eyebrow">Save the dates</p><h2 id="free-days-heading">Upcoming free days <em>in 2026</em></h2><p>These are the useful dates still ahead this year. Regular always-free places are in the main directory.</p></div>
         <div className="explore-free__list">{exploreFreeDates.map((item) => <article key={`${item.date}-${item.place}`}><time>{item.date}</time><div><strong>{item.place}</strong><p>{item.detail}</p></div></article>)}</div>
       </section>
 
       <section className="explore-memberships" id="join" aria-labelledby="memberships-heading">
         <div className="shell section">
-          <div className="explore-memberships__heading"><div><p className="eyebrow">How to actually join</p><h2 id="memberships-heading">Cards, passes and the bits nobody explains</h2></div><p>A library card is for residents. A Helsinki Card is mainly for concentrated sightseeing. Kaikukortti is not a general discount card. Here is what each one really does.</p></div>
+          <div className="explore-memberships__heading"><div><p className="eyebrow">How to actually join</p><h2 id="memberships-heading">Cards, passes and the bits <em>nobody explains</em></h2></div><p>A library card is for residents. A Helsinki Card is mainly for concentrated sightseeing. Kaikukortti is not a general discount card. Here is what each one really does.</p></div>
           <div className="membership-grid">{exploreMemberships.map((item, index) => <article key={item.name}><span className="membership-grid__number">0{index + 1}</span><p>{item.cost}</p><h3>{item.name}</h3><strong>Best for</strong><p>{item.bestFor}</p><ol>{item.steps.map((step) => <li key={step}>{step}</li>)}</ol><small>{item.note}</small><a href={item.website} target="_blank" rel="noreferrer">Open official instructions <span>↗</span></a></article>)}</div>
         </div>
       </section>

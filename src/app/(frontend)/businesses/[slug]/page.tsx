@@ -125,7 +125,7 @@ export default async function BusinessPage({ params }: { params: Promise<{ slug:
         <section className="business-profile__neighbourhoods" aria-labelledby="business-neighbourhood-heading">
           <div>
             <p className="eyebrow">Explore nearby</p>
-            <h2 id="business-neighbourhood-heading">See what else is in the neighbourhood.</h2>
+            <h2 id="business-neighbourhood-heading">See what else is in <em>the neighbourhood.</em></h2>
             <p>Food, useful stops and a few good reasons to take your time before heading home.</p>
           </div>
           <div className="business-profile__neighbourhood-links">

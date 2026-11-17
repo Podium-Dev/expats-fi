@@ -76,7 +76,7 @@ export default async function SportsListingPage({ params }: { params: Promise<{ 
 
         <div className="sports-profile__layout">
           <article className="sports-profile__story">
-            <h2>Why it could be a good fit</h2>
+            <h2>Why it could be a <em>good fit</em></h2>
             {listing.description.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
 
             <section className="sports-profile__highlights">

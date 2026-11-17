@@ -5,7 +5,7 @@ import { labels } from '@/lib/content'
 
 import { SaveBusinessButton } from './SaveBusinessButton'
 
-function businessImage(business: Business): { src: string; alt: string; unoptimized: boolean } | null {
+export function businessImage(business: Business): { src: string; alt: string; unoptimized: boolean } | null {
   const media = business.image && typeof business.image === 'object' ? business.image : null
   const src = media?.url || media?.thumbnailURL || business.imagePath || ''
   if (!src) return null

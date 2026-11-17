@@ -40,7 +40,7 @@ export default async function BusinessesPage({ searchParams }: { searchParams: P
       />
       <header className="page-hero photo-hero photo-hero--dark">
         <HeroBackdrop src="/images/heroes/businesses-bookshop-owner.webp" position="center 45%" />
-        <div className="shell page-hero__inner"><p className="eyebrow">Community directory</p><h1>Find expat-owned businesses across Finland.</h1><p>Spend locally and discover the people building restaurants, services and independent companies here.</p></div>
+        <div className="shell page-hero__inner"><p className="eyebrow">Community directory</p><h1>Find expat-owned businesses <em>across Finland.</em></h1><p>Spend locally and discover the people building restaurants, services and independent companies here.</p></div>
       </header>
       <section className="shell directory-submit-callout" aria-labelledby="directory-submit-title">
         <div>
@@ -53,7 +53,7 @@ export default async function BusinessesPage({ searchParams }: { searchParams: P
       <section className="shell directory-intro" aria-labelledby="directory-shortcuts-title">
         <div>
           <p className="eyebrow">A useful way in</p>
-          <h2 id="directory-shortcuts-title">Looking for somebody who gets it?</h2>
+          <h2 id="directory-shortcuts-title">Looking for somebody who <em>gets it?</em></h2>
           <p>Start with the job at hand. Find an English-speaking tradesperson, somewhere good to eat, a wellbeing service or a welcoming local space.</p>
         </div>
         <nav className="directory-shortcuts" aria-label="Popular business categories">
@@ -71,7 +71,7 @@ export default async function BusinessesPage({ searchParams }: { searchParams: P
           <button type="submit">Find businesses</button>
         </form>
         <p className="results-note">{businesses.length} {businesses.length === 1 ? 'business' : 'businesses'} found</p>
-        {businesses.length ? <div className="business-grid">{businesses.map((business) => <BusinessCard business={business} key={business.id} showSave saved={savedBusinessIds.has(business.id)} />)}</div> : <div className="empty-state"><h2>No businesses match those filters</h2><p>Try removing a filter or searching for a wider area.</p></div>}
+        {businesses.length ? <div className="business-grid">{businesses.map((business) => <BusinessCard business={business} key={business.id} showSave saved={savedBusinessIds.has(business.id)} />)}</div> : <div className="empty-state"><h2>No businesses match <em>those filters</em></h2><p>Try removing a filter or searching for a wider area.</p></div>}
       </section>
     </main>
   )

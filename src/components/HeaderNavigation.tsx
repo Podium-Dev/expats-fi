@@ -144,7 +144,6 @@ export function DesktopNavigation() {
               type="button"
               aria-controls={menuId}
               aria-expanded={open}
-              aria-haspopup="menu"
               onClick={() => toggleItem(item)}
               onKeyDown={(event) => handleTriggerKeyDown(event, item)}
             >
@@ -155,55 +154,32 @@ export function DesktopNavigation() {
               <div
                 ref={(element) => { menuRefs.current[item.label] = element }}
                 id={menuId}
-                className="desktop-nav__menu"
-                role="menu"
+                className="desktop-nav__panel"
               >
-                {item.children.map((child) => {
-                  const childCurrent = isCurrentChild(pathname, child)
-
-                  if (!child.children) {
-                    return (
+                <div className="shell desktop-nav__panel-grid">
+                  {item.children.map((child) => (
+                    <div className="desktop-nav__group" key={child.label}>
                       <Link
-                        key={child.label}
+                        className="desktop-nav__group-title"
                         href={child.href}
-                        role="menuitem"
-                        aria-current={childCurrent ? 'page' : undefined}
+                        aria-current={isCurrentChild(pathname, child) && !child.children ? 'page' : undefined}
                         onClick={() => setOpenLabel(null)}
                       >
-                        <span>{child.label}</span>
-                        <span aria-hidden="true">→</span>
+                        {child.label}
                       </Link>
-                    )
-                  }
-
-                  return (
-                    <div className="desktop-nav__submenu-item" data-current={childCurrent || undefined} role="none" key={child.label}>
-                      <Link
-                        href={child.href}
-                        role="menuitem"
-                        aria-haspopup="menu"
-                        aria-current={childCurrent ? 'page' : undefined}
-                        onClick={() => setOpenLabel(null)}
-                      >
-                        <span>{child.label}</span>
-                        <span className="desktop-nav__submenu-arrow" aria-hidden="true">›</span>
-                      </Link>
-                      <div className="desktop-nav__submenu" role="menu" aria-label={child.label}>
-                        {child.children.map((leaf) => (
-                          <Link
-                            href={leaf.href}
-                            role="menuitem"
-                            aria-current={leafIsCurrent(pathname, leaf.href) ? 'page' : undefined}
-                            onClick={() => setOpenLabel(null)}
-                            key={leaf.label}
-                          >
-                            {leaf.label}
-                          </Link>
-                        ))}
-                      </div>
+                      {child.children?.map((leaf) => (
+                        <Link
+                          href={leaf.href}
+                          aria-current={leafIsCurrent(pathname, leaf.href) ? 'page' : undefined}
+                          onClick={() => setOpenLabel(null)}
+                          key={leaf.label}
+                        >
+                          {leaf.label}
+                        </Link>
+                      ))}
                     </div>
-                  )
-                })}
+                  ))}
+                </div>
               </div>
             )}
           </div>

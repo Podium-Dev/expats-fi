@@ -56,13 +56,13 @@ export default function CommunityPage() {
       />
 
       <section className="shell community-board-callout" aria-labelledby="community-board-callout-heading">
-        <div><p className="eyebrow">New: the community board</p><h2 id="community-board-callout-heading">Ask the question that does not belong in a guide.</h2><p>Compare neighbourhood notes, share a small win and get practical answers from people who are also making a life in Finland.</p><div className="community-board-callout__promises"><span>Post under a friendly alias</span><span>New accounts reviewed first</span><span>Real questions, practical answers</span></div></div>
+        <div><p className="eyebrow">New: the community board</p><h2 id="community-board-callout-heading">Ask the question that does not belong in <em>a guide.</em></h2><p>Compare neighbourhood notes, share a small win and get practical answers from people who are also making a life in Finland.</p><div className="community-board-callout__promises"><span>Post under a friendly alias</span><span>New accounts reviewed first</span><span>Real questions, practical answers</span></div></div>
         <div className="community-board-callout__actions"><Link className="button" href="/community/board/" data-analytics-event="community_board_opened" data-analytics-position="community_hub_callout">Open the community board →</Link><Link className="text-link" href="/community/rules/">How we keep it useful</Link></div>
       </section>
 
       <section className="shell family-stages" aria-labelledby="community-routes-heading">
         <div className="section-heading">
-          <div><p className="eyebrow">Start with your situation</p><h2 id="community-routes-heading">What kind of doorway feels manageable?</h2></div>
+          <div><p className="eyebrow">Start with your situation</p><h2 id="community-routes-heading">What kind of doorway <em>feels manageable?</em></h2></div>
           <p>You do not need to attend everything. Pick one route that fits your life, then give people enough time to recognise you.</p>
         </div>
         <div className="family-stage-grid">
@@ -73,7 +73,7 @@ export default function CommunityPage() {
       <section className="family-systems" aria-labelledby="community-doorways-heading">
         <div className="shell section">
           <div className="section-heading family-systems__heading">
-            <div><p className="eyebrow">Useful doors that already exist</p><h2 id="community-doorways-heading">You do not have to build a social life from scratch.</h2></div>
+            <div><p className="eyebrow">Useful doors that already exist</p><h2 id="community-doorways-heading">You do not have to build a social life <em>from scratch.</em></h2></div>
             <p>These are practical starting points with a real organiser, a clear purpose and somewhere you can reasonably arrive on your own.</p>
           </div>
           <div className="family-system-grid">
@@ -93,7 +93,7 @@ export default function CommunityPage() {
 
       <section className="shell section family-guides" aria-labelledby="community-guides-heading">
         <div className="section-heading">
-          <div><p className="eyebrow">The Meet People guides</p><h2 id="community-guides-heading">Five honest routes into community.</h2></div>
+          <div><p className="eyebrow">The Meet People guides</p><h2 id="community-guides-heading">Five honest routes <em>into community.</em></h2></div>
           <p>Each guide gives you somewhere real to begin, what to expect and the small next step that helps a room stop feeling full of strangers.</p>
         </div>
         <div className="family-guide-grid">

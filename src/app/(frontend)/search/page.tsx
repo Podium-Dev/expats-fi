@@ -104,7 +104,7 @@ export default async function SearchPage({ searchParams }: { searchParams: Promi
         <header className="site-search-hero photo-hero photo-hero--dark">
           <HeroBackdrop src="/images/heroes/resources-documents-laptop.webp" position="center 48%" />
           <div className="shell site-search-hero__inner">
-            <div><p className="eyebrow">Search Expats.fi</p><h1>One search. The whole useful bit.</h1><p>Guides, events, neighbourhoods, food, sports, businesses, community conversations and official contacts all live here.</p></div>
+            <div><p className="eyebrow">Search Expats.fi</p><h1>One search. <em>The whole useful bit.</em></h1><p>Guides, events, neighbourhoods, food, sports, businesses, community conversations and official contacts all live here.</p></div>
             <form className="site-search-form" action="/search/" method="get" role="search">
               <label htmlFor="site-search-query">What are you trying to find?</label>
               <div><input id="site-search-query" name="q" autoFocus placeholder="Kela, Kallio, rugby, daycare…" /><button type="submit">Search everything</button></div>
@@ -112,7 +112,7 @@ export default async function SearchPage({ searchParams }: { searchParams: Promi
           </div>
         </header>
         <section className="shell site-search-starts" aria-labelledby="search-starts-heading">
-          <div className="section-heading"><div><p className="eyebrow">Good places to begin</p><h2 id="search-starts-heading">Or choose the part of life in front of you.</h2></div><p>You do not need the perfect search phrase. Pick a door and keep moving.</p></div>
+          <div className="section-heading"><div><p className="eyebrow">Good places to begin</p><h2 id="search-starts-heading">Or choose the part of life in front <em>of you.</em></h2></div><p>You do not need the perfect search phrase. Pick a door and keep moving.</p></div>
           <div className="site-search-starts__grid">{hubs.slice(0, 12).map((hub) => <Link href={hub.href} key={hub.title}><strong>{hub.title}</strong><span>{hub.description}</span><i aria-hidden="true">→</i></Link>)}</div>
         </section>
       </main>

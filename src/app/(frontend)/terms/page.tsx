@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function TermsPage() {
   return (
     <main id="main" className="privacy-page">
-      <header className="privacy-hero"><div className="shell"><p className="eyebrow">Using Expats.fi</p><h1>Clear ground rules.</h1><p>Expats.fi is here to make life in Finland easier. These terms explain what you can expect from us and what we ask from anyone creating an account or sending us content.</p><small>Version {TERMS_VERSION}</small></div></header>
+      <header className="privacy-hero"><div className="shell"><p className="eyebrow">Using Expats.fi</p><h1>Clear <em>ground rules.</em></h1><p>Expats.fi is here to make life in Finland easier. These terms explain what you can expect from us and what we ask from anyone creating an account or sending us content.</p><small>Version {TERMS_VERSION}</small></div></header>
       <div className="shell privacy-layout">
         <article className="privacy-content">
           <section><h2>About the service</h2><p>Expats.fi is an independent information and community service operated from Finland. It is not a Finnish authority and is not a substitute for legal, medical, financial, immigration or other professional advice. Official sources and qualified professionals remain the final word for decisions that affect your rights, money, health or immigration status.</p></section>

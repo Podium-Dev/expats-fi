@@ -76,7 +76,7 @@ export default async function SportsPage({ searchParams }: { searchParams: Promi
         <div className="shell sports-hero__inner">
           <div>
             <p className="eyebrow">Sports & activities</p>
-            <h1>Find your team. Try something new. Get moving.</h1>
+            <h1>Find your team. Try something new. <em>Get moving.</em></h1>
             <p>Helsinki clubs, social sessions, classes and places to play, with honest notes on language, level, cost and what to do before turning up.</p>
           </div>
           <aside className="sports-hero__starter">
@@ -90,7 +90,7 @@ export default async function SportsPage({ searchParams }: { searchParams: Promi
 
       <section className="shell sports-branches" aria-labelledby="sports-branches-heading">
         <div className="section-heading">
-          <div><p className="eyebrow">Choose your way in</p><h2 id="sports-branches-heading">More than a list of clubs</h2></div>
+          <div><p className="eyebrow">Choose your way in</p><h2 id="sports-branches-heading">More than a list <em>of clubs</em></h2></div>
           <p className="sports-branches__intro">Some people want a team. Others just want a pool, a weekly run or somewhere the kids can burn off steam.</p>
         </div>
         <div className="sports-branch-grid">
@@ -135,7 +135,7 @@ export default async function SportsPage({ searchParams }: { searchParams: Promi
       {sportsEvents.length > 0 && (
         <section className="section shell home-events" aria-labelledby="sports-events-heading">
           <div className="section-heading">
-            <div><p className="eyebrow">Coming up</p><h2 id="sports-events-heading">Try it, watch it or cheer loudly.</h2></div>
+            <div><p className="eyebrow">Coming up</p><h2 id="sports-events-heading">Try it, <em>watch it or cheer loudly.</em></h2></div>
             <Link className="text-link" href="/events/?category=Sports%20%26%20outdoors#events-listing">All sports events <span aria-hidden="true">→</span></Link>
           </div>
           <div className="event-grid">{sportsEvents.map((event) => <EventCard event={event} key={event.slug} />)}</div>

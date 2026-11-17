@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { AccentTitle } from '@/components/AccentTitle'
 import { headers } from 'next/headers'
 import Link from 'next/link'
 
@@ -99,7 +100,7 @@ export default async function ResourcesPage({ searchParams }: { searchParams: Pr
         />
         <div className="shell page-hero__inner">
           <p className="eyebrow">{hero.eyebrow}</p>
-          <h1>{hero.title}</h1>
+          <h1><AccentTitle>{hero.title}</AccentTitle></h1>
           <p>{hero.description}</p>
         </div>
       </header>
@@ -113,7 +114,7 @@ export default async function ResourcesPage({ searchParams }: { searchParams: Pr
           <div className="filter-results-copy"><p className="eyebrow">Guide library</p><h2>{resultTitle}</h2><p>{hasFilters ? 'The results below match your current search. Clear the filters whenever you want the full library back.' : 'Browse the full collection or use the search and topic filters to narrow things down.'}</p></div>
           <div className="filter-results-status"><p aria-live="polite">{articles.length} {articles.length === 1 ? 'guide' : 'guides'} found</p>{hasFilters && <Link href="/resources/#resource-library">Show everything</Link>}</div>
         </div>
-        {articles.length ? <div className="article-grid">{articles.map((article) => <ArticleCard article={article} key={article.id} showSave saved={savedArticleIds.has(article.id)} />)}</div> : <div className="empty-state"><h2>No guides match that search</h2><p>Try a broader phrase or choose all topics.</p></div>}
+        {articles.length ? <div className="article-grid">{articles.map((article) => <ArticleCard article={article} key={article.id} showSave saved={savedArticleIds.has(article.id)} />)}</div> : <div className="empty-state"><h2>No guides match <em>that search</em></h2><p>Try a broader phrase or choose all topics.</p></div>}
       </section>
     </main>
   )

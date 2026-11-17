@@ -83,7 +83,7 @@ export default async function LearnFinnishPage() {
         <div className="shell learning-hero__inner">
           <div>
             <p className="eyebrow">Learn Finnish without losing the plot</p>
-            <h1>Finnish, finally.</h1>
+            <h1>Finnish, <em>finally.</em></h1>
             <p>Free resources, serious courses, useful apps and welcoming places to say something slightly wrong until it starts coming out right.</p>
             <div className="learning-hero__actions"><a className="button" href="#choose-your-path">Find your starting point</a><a href="#practice">Practise in Helsinki ↓</a></div>
           </div>
@@ -98,7 +98,7 @@ export default async function LearnFinnishPage() {
       </nav>
 
       <section className="shell learning-paths" id="choose-your-path" aria-labelledby="learning-path-heading">
-        <div className="section-heading"><div><p className="eyebrow">Choose your route</p><h2 id="learning-path-heading">What do you need Finnish to do?</h2></div></div>
+        <div className="section-heading"><div><p className="eyebrow">Choose your route</p><h2 id="learning-path-heading">What do you need Finnish <em>to do?</em></h2></div></div>
         <div className="learning-path-grid">
           {learningPaths.map((path, index) => (
             <article key={path.title}>
@@ -111,7 +111,7 @@ export default async function LearnFinnishPage() {
       </section>
 
       <aside className="shell learning-reality-check">
-        <div><p className="eyebrow">The honest version</p><h2>Written Finnish and spoken Finnish are close relatives, not identical twins.</h2></div>
+        <div><p className="eyebrow">The honest version</p><h2>Written Finnish and spoken Finnish are close relatives, <em>not identical twins.</em></h2></div>
         <p>Courses usually begin with <em>kirjakieli</em>, the standard written language. Helsinki conversations quickly introduce <em>puhekieli</em>: <strong>minä olen</strong> becomes <strong>mä oon</strong>. Learn the standard foundation, but start listening to everyday speech early so the bus stop does not sound like an entirely different course.</p>
       </aside>
 
@@ -127,7 +127,7 @@ export default async function LearnFinnishPage() {
 
       <section className="learning-practice" id="practice" aria-labelledby="practice-heading">
         <div className="shell">
-          <div className="learning-section-heading"><div><p className="eyebrow">Practise in Helsinki</p><h2 id="practice-heading">Coffee, courage and complete sentences</h2></div><p>Language cafés are not tests. Arrive with two questions, one story from your week and permission to be slower than you are in English.</p></div>
+          <div className="learning-section-heading"><div><p className="eyebrow">Practise in Helsinki</p><h2 id="practice-heading">Coffee, <em>courage and complete sentences</em></h2></div><p>Language cafés are not tests. Arrive with two questions, one story from your week and permission to be slower than you are in English.</p></div>
           <div className="practice-grid">
             {practiceGroups.map((group) => (
               <article key={group.name}>
@@ -141,7 +141,7 @@ export default async function LearnFinnishPage() {
       </section>
 
       <section className="shell learning-yki" id="yki" aria-labelledby="yki-heading">
-        <div className="learning-yki__intro"><p className="eyebrow">Preparing for YKI</p><h2 id="yki-heading">Train the test, but build the language</h2><p>The official YKI certificate measures functional language in everyday situations. It has four separately assessed parts: speaking, listening, reading and writing. A vocabulary app alone cannot prepare all four.</p></div>
+        <div className="learning-yki__intro"><p className="eyebrow">Preparing for YKI</p><h2 id="yki-heading">Train the test, <em>but build the language</em></h2><p>The official YKI certificate measures functional language in everyday situations. It has four separately assessed parts: speaking, listening, reading and writing. A vocabulary app alone cannot prepare all four.</p></div>
         <div className="learning-yki__links">
           {ykiResources.map((resource, index) => <ExternalLink href={resource.url} key={resource.name}><span>0{index + 1}</span><strong>{resource.name}</strong><small>{resource.description}</small><b aria-hidden="true">↗</b></ExternalLink>)}
         </div>

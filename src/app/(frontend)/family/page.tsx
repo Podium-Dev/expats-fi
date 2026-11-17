@@ -56,7 +56,7 @@ export default function FamilyPage() {
         <Image src="/images/heroes/family-together.webp" alt="A family spending time together outdoors in Helsinki" fill sizes="(max-width: 720px) 100vw, 1200px" />
         <div>
           <p className="eyebrow">Helsinki with kids</p>
-          <h2 id="family-kids-callout-heading">Good shouts for getting out of the house.</h2>
+          <h2 id="family-kids-callout-heading">Good shouts for getting out of <em>the house.</em></h2>
           <p>Current family events, free fallbacks, rainy-day rescues and bigger days out, grouped around the sort of day you actually have.</p>
           <div className="family-kids-callout__actions">
             <Link className="button" href="/family/things-to-do-with-kids/">Find something to do</Link>
@@ -67,7 +67,7 @@ export default function FamilyPage() {
 
       <section className="shell family-stages" aria-labelledby="family-stage-heading">
         <div className="section-heading">
-          <div><p className="eyebrow">Start where you are</p><h2 id="family-stage-heading">What stage is your family in?</h2></div>
+          <div><p className="eyebrow">Start where you are</p><h2 id="family-stage-heading">What stage is your <em>family in?</em></h2></div>
           <p>Skip the grand tour and go straight to the guide that matches the chaos currently happening at home.</p>
         </div>
         <div className="family-stage-grid">
@@ -82,7 +82,7 @@ export default function FamilyPage() {
       <section className="family-systems" aria-labelledby="family-systems-heading">
         <div className="shell section">
           <div className="section-heading family-systems__heading">
-            <div><p className="eyebrow">The four logins you will meet</p><h2 id="family-systems-heading">Same family. Completely different systems.</h2></div>
+            <div><p className="eyebrow">The four logins you will meet</p><h2 id="family-systems-heading">Same family. <em>Completely different systems.</em></h2></div>
             <p>This is the bit that saves six open tabs and a mild domestic disagreement.</p>
           </div>
           <div className="family-system-grid">
@@ -102,7 +102,7 @@ export default function FamilyPage() {
 
       <section className="shell section family-guides" aria-labelledby="family-guides-heading">
         <div className="section-heading">
-          <div><p className="eyebrow">The properly useful guides</p><h2 id="family-guides-heading">No vague “contact your municipality” dead ends.</h2></div>
+          <div><p className="eyebrow">The properly useful guides</p><h2 id="family-guides-heading">No vague “contact your municipality” <em>dead ends.</em></h2></div>
           <p>Each guide has the basics, the catches, the insider tips and the official links.</p>
         </div>
         <div className="family-guide-grid">
@@ -121,7 +121,7 @@ export default function FamilyPage() {
         <div className="shell family-real-life__inner">
           <div className="family-real-life__copy">
             <p className="eyebrow">The bits we would tell a mate</p>
-            <h2 id="family-tips-heading">A few things that make the system kinder.</h2>
+            <h2 id="family-tips-heading">A few things that make the <em>system kinder.</em></h2>
             <p>The official pages tell you what exists. These are the habits that stop family admin swallowing the week.</p>
           </div>
           <ol className="family-real-life__list">
@@ -135,7 +135,7 @@ export default function FamilyPage() {
       </section>
 
       <section className="shell family-local-note">
-        <div><p className="eyebrow">Helsinki first</p><h2>Living somewhere else in Finland?</h2></div>
+        <div><p className="eyebrow">Helsinki first</p><h2>Living somewhere else <em>in Finland?</em></h2></div>
         <p>The national parts, including Kela, MyKanta, 112 and the school structure, still apply. Healthcare, social services and local applications belong to your municipality or wellbeing services county, so use the same guide but swap Helsinki’s service link for your local one.</p>
       </section>
 

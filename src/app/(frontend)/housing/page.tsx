@@ -50,20 +50,20 @@ export default function HousingPage() {
       />
 
       <section className="shell family-stages" aria-labelledby="housing-stages-heading">
-        <div className="section-heading"><div><p className="eyebrow">Start with where you are</p><h2 id="housing-stages-heading">What are you trying to sort out today?</h2></div><p>Finding the flat, signing for it, running it and solving a problem are different jobs. Jump straight to the one in front of you.</p></div>
+        <div className="section-heading"><div><p className="eyebrow">Start with where you are</p><h2 id="housing-stages-heading">What are you trying to sort <em>out today?</em></h2></div><p>Finding the flat, signing for it, running it and solving a problem are different jobs. Jump straight to the one in front of you.</p></div>
         <div className="family-stage-grid">{housingStages.map((stage) => <Link href={stage.href} key={stage.number}><span>{stage.number}</span><strong>{stage.title}</strong><small>{stage.detail}</small><i aria-hidden="true">→</i></Link>)}</div>
       </section>
 
       <section className="family-systems" aria-labelledby="housing-costs-heading">
         <div className="shell section">
-          <div className="section-heading family-systems__heading"><div><p className="eyebrow">The real monthly total</p><h2 id="housing-costs-heading">The headline rent is only the first number.</h2></div><p>Ask what is included before comparing two homes. Water, heating and building services can make similar rents behave very differently.</p></div>
+          <div className="section-heading family-systems__heading"><div><p className="eyebrow">The real monthly total</p><h2 id="housing-costs-heading">The headline rent is only the <em>first number.</em></h2></div><p>Ask what is included before comparing two homes. Water, heating and building services can make similar rents behave very differently.</p></div>
           <div className="family-system-grid">{monthlyCosts.map((cost) => <Link href={cost.href} key={cost.name}><small>{cost.label}</small><strong>{cost.name}</strong><p>{cost.description}</p><span>Understand this cost →</span></Link>)}</div>
           <div className="family-maisa-tip"><span>Worth doing</span><div><strong>Photograph the empty home before the boxes arrive.</strong><p>Record every existing mark, supplied appliance, key and meter reading. Send the condition report through a traceable channel.</p></div><Link href="/housing/lease-deposit-and-moving-in/">Open the move-in guide →</Link></div>
         </div>
       </section>
 
       <section className="shell section family-guides" aria-labelledby="housing-guides-heading">
-        <div className="section-heading"><div><p className="eyebrow">The housing guides</p><h2 id="housing-guides-heading">Four stages, properly explained.</h2></div><p>Each guide gives you the order, the evidence worth keeping and the official place to check the current answer.</p></div>
+        <div className="section-heading"><div><p className="eyebrow">The housing guides</p><h2 id="housing-guides-heading">Four stages, <em>properly explained.</em></h2></div><p>Each guide gives you the order, the evidence worth keeping and the official place to check the current answer.</p></div>
         <div className="family-guide-grid">{housingGuides.map((guide) => <article className="family-guide-card" key={guide.slug}><div><span>{guide.number}</span><small>{guide.label}</small></div><h3><Link href={`/housing/${guide.slug}/`}>{guide.title}</Link></h3><p>{guide.summary}</p>{guide.tags && <div className="explore-card__tags">{guide.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>}<Link className="text-link" href={`/housing/${guide.slug}/`}>Open the guide <span aria-hidden="true">→</span></Link></article>)}</div>
       </section>
 
@@ -75,7 +75,7 @@ export default function HousingPage() {
         directoryCategory="Trades"
       />
 
-      <section className="shell family-local-note"><div><p className="eyebrow">When it feels urgent</p><h2>Ask for housing help early.</h2></div><p>Helsinki housing counselling can help residents with applications, rental agreements, rent-payment problems and other housing difficulties. A conversation after the first missed payment is far easier than one after several.<br /><a className="text-link" href="https://www.hel.fi/en/health-and-social-services/social-support-and-financial-assistance/guidance-and-advice/housing-counselling" target="_blank" rel="noreferrer">Open Helsinki housing counselling ↗</a></p></section>
+      <section className="shell family-local-note"><div><p className="eyebrow">When it feels urgent</p><h2>Ask for housing <em>help early.</em></h2></div><p>Helsinki housing counselling can help residents with applications, rental agreements, rent-payment problems and other housing difficulties. A conversation after the first missed payment is far easier than one after several.<br /><a className="text-link" href="https://www.hel.fi/en/health-and-social-services/social-support-and-financial-assistance/guidance-and-advice/housing-counselling" target="_blank" rel="noreferrer">Open Helsinki housing counselling ↗</a></p></section>
     </main>
   )
 }

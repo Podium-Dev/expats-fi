@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { DesktopNavigation, MobileNavigation, SearchIcon } from './HeaderNavigation'
 import { AccountNav } from './AccountNav'
 import { businessDirectoryHref } from './siteNavigation'
-import { SocialLinks } from './SocialLinks'
 
 export function Logo() {
   return (
@@ -16,23 +15,24 @@ export function Logo() {
 
 export function SiteHeader() {
   return (
-    <header className="site-header">
+    <>
       <Link className="site-announcement" href="/news/hsl-contactless-fare-cap-november-2026/">
         <span className="site-announcement__label">New</span>
         <span>HSL now caps contactless fares over 24 hours</span>
         <span className="site-announcement__action">See how it works <i aria-hidden="true">→</i></span>
       </Link>
-      <div className="shell site-header__inner">
-        <Link href="/" className="site-header__brand" aria-label="Expats.fi home"><Logo /></Link>
-        <DesktopNavigation />
-        <div className="site-header__actions">
-          <SocialLinks compact className="site-header__socials" />
-          <Link className="icon-button site-header__search" href="/search/" aria-label="Search Expats.fi"><SearchIcon /></Link>
-          <AccountNav />
-          <Link className="button button--small site-header__directory" href={businessDirectoryHref}>Business directory</Link>
-          <MobileNavigation account={<AccountNav mobile />} />
+      <header className="site-header">
+        <div className="shell site-header__inner">
+          <Link href="/" className="site-header__brand" aria-label="Expats.fi home"><Logo /></Link>
+          <DesktopNavigation />
+          <div className="site-header__actions">
+            <Link className="icon-button site-header__search" href="/search/" aria-label="Search Expats.fi"><SearchIcon /></Link>
+            <AccountNav />
+            <Link className="button button--small site-header__directory" href={businessDirectoryHref}>Business directory</Link>
+            <MobileNavigation account={<AccountNav mobile />} />
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </>
   )
 }

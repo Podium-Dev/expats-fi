@@ -22,7 +22,7 @@ export default function CommunityRulesPage() {
   return (
     <main id="main" className="community-rules-page">
       <header className="community-rules-hero">
-        <div className="shell"><Link className="back-link" href="/community/board/">← Community board</Link><p className="eyebrow">The Expats.fi community rules</p><h1>Useful, kind and safe enough to trust.</h1><p>This is a place for ordinary questions, lived experience and the small bits of local knowledge that help people settle in. These boundaries keep it from turning into a spam wall or an argument nobody needed.</p></div>
+        <div className="shell"><Link className="back-link" href="/community/board/">← Community board</Link><p className="eyebrow">The Expats.fi community rules</p><h1>Useful, kind and safe enough <em>to trust.</em></h1><p>This is a place for ordinary questions, lived experience and the small bits of local knowledge that help people settle in. These boundaries keep it from turning into a spam wall or an argument nobody needed.</p></div>
       </header>
       <div className="shell community-rules-layout">
         <section aria-labelledby="community-rules-heading">
