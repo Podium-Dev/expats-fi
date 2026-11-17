@@ -460,6 +460,24 @@ Used under the Unsplash License and retained here so future editors can trace ea
 - Licence: Unsplash License
 - Treatment: Cropped to 16:9, resized and compressed to WebP. Used as representative household paperwork photography and not as a photograph of a particular Kela customer.
 
+## Original editorial illustrations added 17 November 2026
+
+These images were generated specifically for Expats.fi with OpenAI image generation. They are original editorial illustrations rather than photographs of real people, places or official border facilities.
+
+### Finland’s skills-matching problem
+
+- Site file: `public/images/news/finland-skills-matching-labour-market-2026.webp`
+- Source file retained by the site team: `exec-80d78de3-cb78-4a24-ad84-3d019294a2ec.png`
+- Prompt direction: A premium Nordic editorial illustration showing diverse professionals, qualifications and skill paths converging towards suitable jobs across Finland, using the Expats.fi blue, cream, coral and green palette. No text, logos or recognisable people.
+- Treatment: Generated at 16:9, resized and compressed to WebP without changing the illustrated scene.
+
+### Finland’s short-term work entry restrictions
+
+- Site file: `public/images/news/finland-russian-short-term-work-entry-2026.webp`
+- Source file retained by the site team: `exec-9e7f59f8-b549-4c54-8c48-63ed7b480025.png`
+- Prompt direction: A calm Nordic editorial illustration of an anonymous traveller with luggage approaching a Finnish border checkpoint, with travel documents and subtle Finland and Schengen visual cues. No text, logos or recognisable people.
+- Treatment: Generated at 16:9, resized and compressed to WebP without changing the illustrated scene.
+
 ## Working rule
 
 Do not use an asset marked Editorial License as a decorative or promotional site image. Do not commit the untouched high-resolution source files. Keep only the web-ready derivative required by the site and retain this record for provenance.

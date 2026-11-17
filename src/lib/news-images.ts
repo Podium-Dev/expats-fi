@@ -4,6 +4,14 @@ type NewsImage = {
 }
 
 const newsImages: Record<string, NewsImage> = {
+  'finland-skills-matching-labour-market-2026': {
+    src: '/images/news/finland-skills-matching-labour-market-2026.webp',
+    alt: 'An editorial illustration of international professionals connecting their skills with jobs across Finland',
+  },
+  'finland-russian-short-term-work-entry-2026': {
+    src: '/images/news/finland-russian-short-term-work-entry-2026.webp',
+    alt: 'An editorial illustration of a traveller with luggage approaching a Finnish border checkpoint',
+  },
   'hsl-contactless-fare-cap-november-2026': {
     src: '/images/news/hsl-contactless-fare-cap-november-2026.webp',
     alt: 'A passenger holding a contactless bank card over a payment terminal',
