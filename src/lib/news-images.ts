@@ -4,6 +4,18 @@ type NewsImage = {
 }
 
 const newsImages: Record<string, NewsImage> = {
+  'finland-fi-alert-phone-warning-test-2026': {
+    src: '/images/news/finland-fi-alert-phone-warning-test-2026.webp',
+    alt: 'An official emergency warning displayed on a phone beside a Helsinki tram street',
+  },
+  'hsl-distance-based-fare-pilot-2026': {
+    src: '/images/news/hsl-distance-based-fare-pilot-2026.webp',
+    alt: 'A passenger checking a journey fare on her phone at a Helsinki tram stop',
+  },
+  'eu-social-security-rules-2028-finland': {
+    src: '/images/news/eu-social-security-rules-2028-finland.webp',
+    alt: 'A cross-border worker organising European social-security documents at home',
+  },
   'finland-skills-matching-labour-market-2026': {
     src: '/images/news/finland-skills-matching-labour-market-2026.webp',
     alt: 'An editorial illustration of international professionals connecting their skills with jobs across Finland',

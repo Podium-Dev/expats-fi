@@ -54,6 +54,13 @@ export const novemberSeventeenStories: SeedNewsStory[] = [
       <p>Treat the barometer as a direction of travel. The useful evidence still comes from the vacancies in your location and profession.</p>
       <p>It is also worth remembering that hiring can recover more slowly than the wider economy. Companies may feel more confident while still delaying permanent recruitment. That gap is one reason the outlook can improve before jobseekers notice much difference.</p>
 
+      <h2>Fresh vacancy figures show a slow and uneven recovery</h2>
+      <p>Statistics Finland published another useful piece of the picture on 20 November. It counted 26,600 job vacancies in the third quarter of 2026, compared with 27,100 a year earlier.</p>
+      <p>Helsinki-Uusimaa had 10,000 vacancies, down from 10,700. Private employers accounted for 76 per cent of all vacancies.</p>
+      <p>The type of work available matters too. Thirty-two per cent of vacancies were fixed-term, 21 per cent were part-time and one-third were considered difficult to fill.</p>
+      <p>The Ministry of Economic Affairs and Employment expects employment to improve gradually towards the end of 2026 and through 2027, but it does not forecast a quick return to an easy job market. Its forecast puts unemployment at 10.3 per cent in 2026, falling to 9.6 per cent in 2027 and 9.4 per cent in 2028.</p>
+      <p>For international jobseekers, the message is mixed. Employers are still recruiting, particularly in the private sector, but competition remains strong and the recovery is likely to vary sharply by field and region.</p>
+
       <h2>What happens next</h2>
       <p>The barometer points to cautious recovery, not a dramatic turnaround. High unemployment will continue to make many searches competitive.</p>
       <p>The practical response is to become easier to match. Translate foreign experience into terms Finnish employers recognise, prove the skills that recur across genuine vacancies and avoid spending months collecting training that nobody has asked for.</p>
@@ -64,6 +71,8 @@ export const novemberSeventeenStories: SeedNewsStory[] = [
       { name: 'Job Market Finland: Matching skills with jobs remains a challenge', url: 'https://tyomarkkinatori.fi/en/news/tyomarkkinoiden-haasteena-yha-osaamisen-ja-tyon-kohtaaminen' },
       { name: 'Job Market Finland', url: 'https://tyomarkkinatori.fi/en' },
       { name: 'Finnish National Agency for Education: recognition of qualifications', url: 'https://www.oph.fi/en/services/recognition-qualifications' },
+      { name: 'Statistics Finland: Job vacancies in the third quarter of 2026', url: 'https://stat.fi/en/publication/cmfy04zjagu8f07ut939phtid' },
+      { name: 'Ministry of Economic Affairs and Employment: Labour market forecast', url: 'https://valtioneuvosto.fi/en/-/1410877/labour-market-forecast-promising-growth-in-employment' },
     ],
   },
   {
