@@ -839,6 +839,14 @@ h1 em { color: var(--blue); }
 .embassy-profile__body { display: grid; grid-template-columns: minmax(0, 1fr) 22rem; gap: clamp(3rem, 8vw, 6rem); padding-block-start: 3rem; }
 .embassy-profile__body section > h2 { max-inline-size: 24ch; margin-block: 1.2rem .8rem; font-size: clamp(1.8rem, 3vw, 2.35rem); }
 .embassy-profile__body section > p { max-inline-size: 65ch; color: var(--ink-soft); }
+.embassy-profile__guidance { display: grid; gap: 2rem; max-inline-size: 48rem; margin-block-start: 2.5rem; }
+.embassy-profile__guidance > section { padding-block-start: 1.5rem; border-block-start: 1px solid var(--line); }
+.embassy-profile__body .embassy-profile__guidance h2 { max-inline-size: 27ch; margin: .45rem 0 .75rem; font-size: clamp(1.45rem, 2.5vw, 2rem); }
+.embassy-profile__guidance p:not(.eyebrow), .embassy-profile__guidance li { color: var(--ink-soft); line-height: 1.72; }
+.embassy-profile__guidance ul { display: grid; gap: .55rem; max-inline-size: 65ch; margin: 1rem 0 0; padding-inline-start: 1.2rem; }
+.embassy-profile__official-links { display: flex; flex-wrap: wrap; gap: .65rem 1.2rem; margin-block-start: 1rem; }
+.embassy-profile__official-links a { color: var(--blue); font-size: .84rem; font-weight: 720; text-decoration: none; }
+.embassy-profile__official-links a:hover { text-decoration: underline; text-underline-offset: .2em; }
 .verification-callout { max-inline-size: 44rem; margin-block-start: 2rem; padding: 1.25rem; border: 1px solid var(--line-strong); border-radius: .8rem; background: var(--blue-pale); }
 .verification-callout strong { display: block; margin-block-end: .35rem; }
 .verification-callout p { margin: 0; color: var(--ink-soft); font-size: .9rem; }

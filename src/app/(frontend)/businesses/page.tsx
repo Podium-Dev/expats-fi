@@ -29,6 +29,9 @@ export default async function BusinessesPage({ searchParams }: { searchParams: P
   const savedBusinessIds = member ? await getSavedBusinessIds(member.id) : new Set<number>()
   const categories = [...new Set(allBusinesses.flatMap((business) => labels(business.categories)))].sort()
   const locations = [...new Set(allBusinesses.flatMap((business) => labels(business.locations)))].sort()
+  const recentBusinesses = [...allBusinesses]
+    .sort((left, right) => Date.parse(right.createdAt) - Date.parse(left.createdAt))
+    .slice(0, 4)
 
   return (
     <main id="main">
@@ -63,6 +66,20 @@ export default async function BusinessesPage({ searchParams }: { searchParams: P
           <Link className={category === 'Community spaces' ? 'is-active' : ''} href="/businesses/?category=Community%20spaces#business-directory">Community spaces <span aria-hidden="true">→</span></Link>
         </nav>
       </section>
+      {recentBusinesses.length > 0 && !category && !location && !q && (
+        <section className="shell directory-new section" aria-labelledby="directory-new-title">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">Freshly added</p>
+              <h2 id="directory-new-title">New people to <em>know about.</em></h2>
+            </div>
+            <p>The latest expat-owned businesses to join the directory, properly introduced rather than dropped into a list.</p>
+          </div>
+          <div className="business-grid">
+            {recentBusinesses.map((business) => <BusinessCard business={business} key={`new-${business.id}`} showSave saved={savedBusinessIds.has(business.id)} />)}
+          </div>
+        </section>
+      )}
       <section className="shell listing-section filter-target" id="business-directory" aria-label="Business directory">
         <form className="filter-form" action="/businesses/#business-directory" method="get" role="search" data-analytics-event="search_submitted" data-analytics-section="businesses">
           <label>Search<input name="q" defaultValue={q} placeholder="Pizza, barber, Helsinki…" /></label>
