@@ -450,6 +450,17 @@ h1 em { color: var(--blue); }
 .directory-shortcuts a:hover, .directory-shortcuts a:focus-visible, .directory-shortcuts a.is-active { background: var(--blue); color: var(--snow); }
 .directory-shortcuts a span { color: var(--blue); transition: color 160ms ease, transform 160ms ease; }
 .directory-shortcuts a:hover span, .directory-shortcuts a:focus-visible span, .directory-shortcuts a.is-active span { color: var(--snow); transform: translateX(.2rem); }
+.directory-new { margin-block: clamp(2rem, 4vw, 3.5rem) 1rem; padding-block: 1.25rem 1.4rem; border-block: 1px solid var(--line); }
+.directory-new__heading { display: flex; align-items: end; justify-content: space-between; gap: 1.5rem; margin-block-end: 1rem; }
+.directory-new__heading h2 { margin: .18rem 0 0; font-size: clamp(1.35rem, 2vw, 1.75rem); letter-spacing: -.03em; }
+.directory-new__heading .text-link { flex: none; font-size: .82rem; }
+.directory-new__list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-block-start: 1px solid var(--line); border-inline-start: 1px solid var(--line); }
+.directory-new__list > a { min-inline-size: 0; display: flex; align-items: center; justify-content: space-between; gap: .85rem; min-block-size: 5rem; padding: .9rem 1rem; border-inline-end: 1px solid var(--line); border-block-end: 1px solid var(--line); color: var(--ink); text-decoration: none; transition: background-color 160ms ease, color 160ms ease; }
+.directory-new__list > a:hover, .directory-new__list > a:focus-visible { background: var(--blue-pale); color: var(--blue-dark); }
+.directory-new__list > a > span:first-child { min-inline-size: 0; display: grid; gap: .22rem; }
+.directory-new__list strong { overflow: hidden; font-size: .92rem; text-overflow: ellipsis; white-space: nowrap; }
+.directory-new__list small { overflow: hidden; color: var(--muted); font-size: .68rem; font-weight: 680; letter-spacing: .045em; text-overflow: ellipsis; text-transform: uppercase; white-space: nowrap; }
+.directory-new__list > a > span:last-child { flex: none; color: var(--blue); }
 
 .sports-home { overflow: hidden; border-block-end: 1px solid var(--line); background: var(--ink); color: var(--snow); }
 .sports-home__inner { display: grid; grid-template-columns: minmax(0, .85fr) minmax(30rem, 1.15fr); gap: clamp(3rem, 8vw, 7rem); align-items: center; padding-block: clamp(4.5rem, 8vw, 6.5rem); }
@@ -693,6 +704,9 @@ h1 em { color: var(--blue); }
 
 
 .listing-section { padding-block: 2.5rem 6rem; }
+.listing-section__heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(18rem, .7fr); gap: 2rem; align-items: end; margin-block-end: 1.5rem; }
+.listing-section__heading h2 { margin: .25rem 0 0; font-size: clamp(2rem, 3.8vw, 3.25rem); letter-spacing: -.045em; line-height: 1; }
+.listing-section__heading > p { max-inline-size: 34rem; margin: 0; color: var(--muted); line-height: 1.6; }
 /* Page heroes: copy on paper, the photograph as a rounded card, and the note pinned inside it. */
 .hub-hero, .photo-hero, .community-board-hero, .privacy-hero, .community-rules-hero { --hero-pad: clamp(2rem, 4vw, 3.5rem); --hero-gap: clamp(2rem, 5vw, 4.5rem); position: relative; overflow: hidden; border-block-end: 1px solid var(--line); background: var(--paper); color: var(--ink); isolation: isolate; }
 .hub-hero__media, .photo-hero__media { position: absolute; z-index: 0; inset-block: var(--hero-pad); inset-inline-end: calc((100% - var(--shell)) / 2); inline-size: calc(var(--shell) * .43); overflow: hidden; border-radius: var(--radius-lg); background: var(--blue); animation: expats-rise-in 700ms var(--ease-out) 120ms both; }
@@ -1908,6 +1922,17 @@ h1 em { color: var(--blue); }
   .hike-guide__practical section:last-child { grid-column: auto; }
   .hike-guide__facts > div + div { border-block-start: 1px solid var(--line); }
   .hike-checklist li, .hike-checklist li:nth-child(even) { min-block-size: 0; border-inline-end: 0; }
+}
+
+@media (max-width: 720px) {
+  .directory-new__heading { align-items: start; }
+  .directory-new__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .listing-section__heading { grid-template-columns: 1fr; gap: .75rem; }
+}
+
+@media (max-width: 480px) {
+  .directory-new__heading { display: grid; }
+  .directory-new__list { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {

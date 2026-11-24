@@ -67,20 +67,40 @@ export default async function BusinessesPage({ searchParams }: { searchParams: P
         </nav>
       </section>
       {recentBusinesses.length > 0 && !category && !location && !q && (
-        <section className="shell directory-new section" aria-labelledby="directory-new-title">
-          <div className="section-heading">
+        <section className="shell directory-new" aria-labelledby="directory-new-title">
+          <div className="directory-new__heading">
             <div>
-              <p className="eyebrow">Freshly added</p>
-              <h2 id="directory-new-title">New people to <em>know about.</em></h2>
+              <p className="eyebrow">Recently added</p>
+              <h2 id="directory-new-title">The latest arrivals</h2>
             </div>
-            <p>The latest expat-owned businesses to join the directory, properly introduced rather than dropped into a list.</p>
+            <Link className="text-link" href="#business-directory">See the full directory <span aria-hidden="true">↓</span></Link>
           </div>
-          <div className="business-grid">
-            {recentBusinesses.map((business) => <BusinessCard business={business} key={`new-${business.id}`} showSave saved={savedBusinessIds.has(business.id)} />)}
+          <div className="directory-new__list">
+            {recentBusinesses.map((business) => {
+              const businessCategories = labels(business.categories)
+              const businessLocations = labels(business.locations)
+
+              return (
+                <Link href={`/businesses/${business.slug}/`} key={`new-${business.id}`}>
+                  <span>
+                    <strong>{business.name}</strong>
+                    <small>{[businessCategories[0], businessLocations[0]].filter(Boolean).join(' · ')}</small>
+                  </span>
+                  <span aria-hidden="true">→</span>
+                </Link>
+              )
+            })}
           </div>
         </section>
       )}
       <section className="shell listing-section filter-target" id="business-directory" aria-label="Business directory">
+        <div className="listing-section__heading">
+          <div>
+            <p className="eyebrow">Full directory</p>
+            <h2>Browse all {allBusinesses.length} businesses</h2>
+          </div>
+          <p>Search the complete directory or narrow it down by category and location.</p>
+        </div>
         <form className="filter-form" action="/businesses/#business-directory" method="get" role="search" data-analytics-event="search_submitted" data-analytics-section="businesses">
           <label>Search<input name="q" defaultValue={q} placeholder="Pizza, barber, Helsinki…" /></label>
           <label>Category<select name="category" defaultValue={category}><option value="">All categories</option>{categories.map((item) => <option key={item}>{item}</option>)}</select></label>
