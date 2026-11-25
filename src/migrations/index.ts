@@ -21,6 +21,7 @@ import * as migration_20261104_073000_publish_november_four_editorial from './20
 import * as migration_20261109_110000_publish_loaf_sourdough_bakery from './20261109_110000_publish_loaf_sourdough_bakery';
 import * as migration_20261117_103000_publish_november_seventeen_editorial from './20261117_103000_publish_november_seventeen_editorial';
 import * as migration_20261123_120000_publish_november_twenty_three_editorial from './20261123_120000_publish_november_twenty_three_editorial';
+import * as migration_20261125_120000_publish_november_twenty_five_editorial from './20261125_120000_publish_november_twenty_five_editorial';
 import * as migration_20260913_090000_publish_student_kela_news from './20260913_090000_publish_student_kela_news';
 import * as migration_20260907_100000_publish_september_news from './20260907_100000_publish_september_news';
 import * as migration_20260803_075626_initial from './20260803_075626_initial';
@@ -353,5 +354,10 @@ export const migrations = [
     up: migration_20261123_120000_publish_november_twenty_three_editorial.up,
     down: migration_20261123_120000_publish_november_twenty_three_editorial.down,
     name: '20261123_120000_publish_november_twenty_three_editorial',
+  },
+  {
+    up: migration_20261125_120000_publish_november_twenty_five_editorial.up,
+    down: migration_20261125_120000_publish_november_twenty_five_editorial.down,
+    name: '20261125_120000_publish_november_twenty_five_editorial',
   },
 ];

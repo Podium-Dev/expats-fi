@@ -4,6 +4,18 @@ type NewsImage = {
 }
 
 const newsImages: Record<string, NewsImage> = {
+  'kela-child-home-care-allowance-2027': {
+    src: '/images/heroes/family-benefits-budget.jpg',
+    alt: 'Illustration for a guide to planning family finances in Finland',
+  },
+  'finland-public-healthcare-fees-cap-2027': {
+    src: '/images/news/kela-benefit-index-changes-2027.webp',
+    alt: 'Household paperwork, a calculator and euro coins arranged on a kitchen table',
+  },
+  'helsinki-family-weekend-november-27-29-2026': {
+    src: '/images/family-kids/annantalo-art-workshop.webp',
+    alt: 'Illustrative image of a children’s art workshop',
+  },
   'finland-fi-alert-phone-warning-test-2026': {
     src: '/images/news/finland-fi-alert-phone-warning-test-2026.webp',
     alt: 'An official emergency warning displayed on a phone beside a Helsinki tram street',
